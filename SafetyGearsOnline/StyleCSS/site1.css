@@ -1,0 +1,116 @@
+﻿/* Main */
+html							{	background-image:url("../image/Nav.png"); background-repeat: repeat; background-position: center; background-attachment: fixed;	}
+body 							{   background-image:url('../image/safetygearbackground.jpg'); background-repeat: no-repeat; background-position: center center; background-attachment: fixed; }
+body img						{	width:50%;	}
+
+/* Containers */
+
+#wrapper 						{  	width:960px; margin:0px auto; background-image:url('../image/safetygearbackground.jpg'); clear:both; position:relative;}
+
+/* TOP */
+		
+#top	 						{  	background-image:url('../image/Nav.png'); width:100%; overflow:hidden; border-bottom:10px #666666 groove; padding:30px 0 0 0;;}
+#top img						{	width:100%; overflow:hidden; 	}
+
+#logo							{	}
+#logo img 						{		}
+
+
+/* Navigator */
+
+#topnav 						{ 	width:100%; clear:both; top:1px; z-index:1; text-align:center; padding:10px 0 10px 0; border-bottom:10px #666666 groove; }						  
+#topnav ul 						{	 }
+						
+#topnav ul li					{	display:inline; text-align:center;  	}
+#topnav ul li a					{	padding:10px 15px; text-decoration:none; margin:0 20px 0 20px; border:medium #000000 double; }
+
+#topnav a:link					{	color:white; background-color:black;	}
+#topnav a:visited				{	color:white; background-color:black;	}
+#topnav a:active				{	color:blueviolet; background-color:greenyellow;    }
+#topnav a:hover					{	color:indianred; background-color:black;	}
+#topnav a:focus					{	color:white; background-color:black;	}
+
+/* Banner for javascript */
+#banner							{	text-align:center;	}
+#banner img						{	width:100%; 	}
+
+
+/* Slider for javascript */
+
+#slider 						{ 		}
+#slider img						{	width:70%; margin:30px 0 0 0;	}
+#slider p						{	margin:0 30px 0 30px; border:medium #000000 groove;}	
+
+
+/* Start Slider for javascript using Ajatix Class (ID) from ajatix.com */
+
+
+
+/* End Slider for javascript using Ajatix Class (ID) from ajatix.com */
+
+
+
+
+
+.sliderimg						{ 	width:100%; 	 }
+
+.sliderimg> div 				{ }
+
+/* subbanner */
+
+
+#subbanner 						{ 	width:100%; background-color:#555555; padding:15px 0; overflow:hidden;  }
+#subbanner h3					{	color:#ffffff; font-size:16px; font-weight:bold; text-align:center; line-height:180%	}
+
+/*  content */
+
+ 
+/* Begin Iframe */
+
+#iframe							{	margin:40px 0 0 0; 	}
+#iframep p						{	font-size:xx-large;	}
+
+#iframe0						{	margin:40px 0 0 0;	}
+#iframep0 p						{	font-size:xx-large;	}
+
+
+
+
+
+/* End Iframe */
+ 
+#content						{  	float:left; width:61%; padding:0px 30px 0px 30px; margin:0px 0px 0px 0px; }
+#content h1						{	margin:0 0 20px 0; font-size:32px; border-bottom:1px #777777 solid; padding:20px 0; text-align:center;	}
+#content p						{	margin:16px 0; line-height:160%; font-family:"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;	}
+#content h2						{	margin:2px 0 0 0;	}
+#content img 					{	padding:8px; border:1px #888888 solid; width:100%; 	}
+
+
+/* content index */
+#indeximg img       			{	text-align:center; width:100%; 	}
+
+
+/* rightside */
+
+#rightside 						{   padding:0 30px 0 270px; margin-left:40%;	}
+#rightside h2 					{		}
+#rightside p					{	line-height:160%; font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;	}
+#rightside img					{	text-align:center; width:100%; margin:20px 0 0 0;	}
+
+#rightsidestatus				{	text-align:center; border:medium #000000 groove; margin:0 10px 30px 10px;	}
+
+
+/* Footer */
+
+#footer 						{  	overflow:hidden; clear:both; background-image:url('../image/Footer.png'); padding:10px 0;	 }
+#footer p 						{	float:left; text-align:center; color:#FFFFFF; padding:0 0 0 40px;	}
+#footer img						{		}
+
+#social-media 					{	float:right; margin:0 10px 0 0;} 			
+#social-media img 				{	width:34px; height:34px; margin:0 10px 0 0px;	}
+#social-media ul li 			{	display:inline; }
+#social-media p					{	color:#FFFFFF; margin:5px 5px 10px 0; text-align:right;}
+
+#facebooksm      				{	width:34px; height:34px; margin:0 10px 0 0px; display:inline;	}
+#twittersm                      {	width:34px; height:34px; margin:0 10px 0 0px; display:inline;	}   
+#blogsm                         {	width:34px; height:34px; margin:0 10px 0 0px; display:inline;	}
