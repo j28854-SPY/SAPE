@@ -11,7 +11,7 @@ namespace SafetyGearsOnline.pages
 {
 
 
-    public partial class Merchandise
+    public partial class _default
     {
     }
 }

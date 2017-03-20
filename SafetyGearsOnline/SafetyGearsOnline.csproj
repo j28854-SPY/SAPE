@@ -75,10 +75,8 @@
     <Content Include="image\Nav.png" />
     <Content Include="image\safetygearbackground.jpg" />
     <Content Include="packages.config" />
-    <Content Include="pages\Home.aspx" />
-    <Content Include="pages\Management.aspx" />
-    <Content Include="pages\Merchandise.aspx" />
-    <Content Include="pages\Transcription.aspx" />
+    <Content Include="pages\Contact.aspx" />
+    <Content Include="pages\default.aspx" />
     <Content Include="Site1.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -98,33 +96,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="pages\Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="pages\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="pages\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\Management.aspx.cs">
-      <DependentUpon>Management.aspx</DependentUpon>
+    <Compile Include="pages\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\Management.aspx.designer.cs">
-      <DependentUpon>Management.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="pages\Merchandise.aspx.cs">
-      <DependentUpon>Merchandise.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="pages\Merchandise.aspx.designer.cs">
-      <DependentUpon>Merchandise.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="pages\Transcription.aspx.cs">
-      <DependentUpon>Transcription.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="pages\Transcription.aspx.designer.cs">
-      <DependentUpon>Transcription.aspx</DependentUpon>
+    <Compile Include="pages\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">

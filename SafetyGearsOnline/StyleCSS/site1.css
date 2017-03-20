@@ -30,6 +30,8 @@ body img						{	width:50%;	}
 #topnav a:hover					{	color:indianred; background-color:black;	}
 #topnav a:focus					{	color:white; background-color:black;	}
 
+#adminlink                      {   float:right; color:white; background-color:black;  }
+
 /* Banner for javascript */
 #banner							{	text-align:center;	}
 #banner img						{	width:100%; 	}
@@ -114,3 +116,10 @@ body img						{	width:50%;	}
 #facebooksm      				{	width:34px; height:34px; margin:0 10px 0 0px; display:inline;	}
 #twittersm                      {	width:34px; height:34px; margin:0 10px 0 0px; display:inline;	}   
 #blogsm                         {	width:34px; height:34px; margin:0 10px 0 0px; display:inline;	}
+
+
+
+
+/* Contactform */
+
+#contactform                    {   width:960px; margin:0px auto; clear:both; position:relative;    }

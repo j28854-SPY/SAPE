@@ -43,7 +43,7 @@
                 <li><asp:HyperLink ID="transcriptionlink" runat="server" NavigateUrl="~/pages/Transcription.aspx">Transcription</asp:HyperLink></li>
                 <li><asp:HyperLink ID="managementlink" runat="server" NavigateUrl="~/pages/Management.aspx">Management</asp:HyperLink></li>
                 
-
+                
 				
 			</ul>
 		</div>
@@ -120,7 +120,7 @@
 						
 					</ul>
 					
-					<p>Never hang around in a loose harness !!</p>
+					<p>Never hang around in a loose harness !!</p> <asp:HyperLink ID="adminlink" runat="server">Admin</asp:HyperLink>
 			</div>
 <!-- Start CopyRight Links -->
 			
