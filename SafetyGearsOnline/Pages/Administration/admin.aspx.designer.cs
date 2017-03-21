@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SafetyGearsOnline.pages
+namespace SafetyGearsOnline.Pages.Administration
 {
 
 
-    public partial class Admin
+    public partial class admin
     {
     }
 }

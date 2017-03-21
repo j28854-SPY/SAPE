@@ -1,0 +1,59 @@
+﻿/* Main */
+html							{	background-image:url('../Images');	}
+body 							{   background-image:url(); background-repeat: no-repeat; background-position: center; background-attachment: fixed; }
+body img						{	width:50%;	}
+
+/* Containers */
+
+#wrapper 						{  	width:960px; margin:0px auto; background-image:url(); clear:both; position:relative;}
+
+/* TOP */
+		
+#top	 						{  	background-color:black; width:100%; overflow:hidden; border-bottom:10px #666666 groove; padding:30px 0 0 0;;}
+#top img						{	width:100%; overflow:hidden; 	}
+
+#logo							{	}
+#logo img 						{		}
+
+
+/* Navigator */
+
+#topnav 						{ 	width:100%; background-image:url('../Images/index.jpg'); clear:both; top:1px; z-index:1; text-align:center; padding:20px 0 10px 0; border-bottom:10px #666666 groove; }						  
+#topnav ul 						{	background-image:url(); }
+						
+#topnav ul li					{	display:inline; text-align:center;  	}
+#topnav ul li a					{	padding:10px 50px; text-decoration:none; margin:0 20px 0 20px; border:medium #000000 double; }
+
+#topnav a:link		            {	Color:gold; border-color:goldenrod; background-color:grey;	}
+#topnav a:visited				{	Color:white; border-color:goldenrod; background-color:black;	}
+#topnav a:active		        {	Color:white; border-color:goldenrod; background-color:black;	}
+#topnav a:hover					{	Color:gold; border-color:goldenrod; background-color:grey;	}
+#topnav a:focus					{	Color:white; border-color:goldenrod; background-color:black;	}
+
+/* Banner for javascript */
+#banner							{	text-align:center;	}
+#banner img						{	width:100%; 	}
+
+
+
+
+#subbanner 						{ 	width:100%; background-image:url('../Images/grey-white.jpg'); padding:15px 0; overflow:hidden;  }
+#subbanner h3					{	color:black; font-size:16px; font-weight:bold; text-align:center; line-height:100%; text-shadow:initial;	}
+
+/*  content */
+
+
+/* End Content */
+
+
+/* Footer */
+
+#footer 						{  	background-image:url('../Images/BGWrap.png');	 }
+
+
+#footerrightside li             {   display:inline; }      
+#facebooklink 				    {	float:right; margin:0 10px 0 0; width:34px; height:34px; margin:0 10px 0 0px; color:#FFFFFF; margin:5px 5px 10px 0; text-align:right;} 	
+#twitterlink 				    {	float:right; margin:0 10px 0 0; width:34px; height:34px; margin:0 10px 0 0px; color:#FFFFFF; margin:5px 5px 10px 0; text-align:right;} 			
+#bloggerlink 				    {	float:right; margin:0 10px 0 0; width:34px; height:34px; margin:0 10px 0 0px; color:#FFFFFF; margin:5px 5px 10px 0; text-align:right;} 			
+		
+

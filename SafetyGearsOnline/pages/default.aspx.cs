@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace SafetyGearsOnline.pages
+namespace SafetyGearsOnline.Pages
 {
     public partial class _default : System.Web.UI.Page
     {

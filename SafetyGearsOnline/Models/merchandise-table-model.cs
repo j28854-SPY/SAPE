@@ -3,25 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace SafetyGearsOnline
+namespace SafetyGearsOnline.Models
 {
     public class merchandise_table_model
     {
+
 
         public string AddMerchandise(merchandise_table merchandise)
         {
 
 
 
-            try 
+            try
             {
-                SGODBEntities db = new SGODBEntities();
+                SGODBEntities1 db = new SGODBEntities1();
                 db.merchandise_table.Add(merchandise);
 
                 db.SaveChanges();
                 return merchandise.Name + "Added Sucessfull";
 
-            
+
 
             }
             catch (Exception e)
@@ -49,7 +50,7 @@ namespace SafetyGearsOnline
 
             try
             {
-                SGODBEntities db = new SGODBEntities();
+                SGODBEntities1 db = new SGODBEntities1();
                 merchandise_table merchandise = db.merchandise_table.Find(id);
 
                 db.merchandise_table.Attach(merchandise);
@@ -83,7 +84,7 @@ namespace SafetyGearsOnline
 
             try
             {
-                SGODBEntities db = new SGODBEntities();
+                SGODBEntities1 db = new SGODBEntities1();
                 merchandise_table m = db.merchandise_table.Find(id);
 
                 m.idtype = merchandise.idtype;
@@ -109,6 +110,8 @@ namespace SafetyGearsOnline
 
 
         }
+
+
 
 
     }

@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SafetyGearsOnline.pages
+namespace SafetyGearsOnline.Pages
 {
 
 
-    public partial class About
+    public partial class about
     {
     }
 }

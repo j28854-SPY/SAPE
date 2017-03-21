@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SafetyGearsOnline.pages
+namespace SafetyGearsOnline.Pages
 {
 
 

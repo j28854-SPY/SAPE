@@ -137,7 +137,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="SGODBEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="SGODBEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="merchandise_cart" EntityType="Self.merchandise_cart" />
           <EntitySet Name="merchandise_table" EntityType="Self.merchandise_table" />
           <EntitySet Name="merchandise_types" EntityType="Self.merchandise_types" />
@@ -155,7 +155,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="SGODBModelStoreContainer" CdmEntityContainer="SGODBEntities">
+        <EntityContainerMapping StorageEntityContainer="SGODBModelStoreContainer" CdmEntityContainer="SGODBEntities1">
           <EntitySetMapping Name="merchandise_cart">
             <EntityTypeMapping TypeName="SGODBModel.merchandise_cart">
               <MappingFragment StoreEntitySet="merchandise-cart">

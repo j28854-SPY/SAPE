@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SafetyGearsOnline
+namespace SafetyGearsOnline.Models
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class SGODBEntities : DbContext
+    public partial class SGODBEntities1 : DbContext
     {
-        public SGODBEntities()
-            : base("name=SGODBEntities")
+        public SGODBEntities1()
+            : base("name=SGODBEntities1")
         {
         }
     

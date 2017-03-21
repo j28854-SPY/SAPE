@@ -1,4 +1,4 @@
-﻿<%@ Page Title="About | Safety & Protective Equipment" Language="C#" MasterPageFile="~/Pages/MasterPage/template.Master" AutoEventWireup="true" CodeBehind="about.aspx.cs" Inherits="SafetyGearsOnline.Pages.about" %>
+﻿<%@ Page Title="Admin | Safety & Protective Equipment" Language="C#" MasterPageFile="~/Pages/MasterPage/template.Master" AutoEventWireup="true" CodeBehind="admin.aspx.cs" Inherits="SafetyGearsOnline.Pages.Administration.admin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="bannerCPH" runat="server">

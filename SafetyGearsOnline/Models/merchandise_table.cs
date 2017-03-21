@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SafetyGearsOnline
+namespace SafetyGearsOnline.Models
 {
     using System;
     using System.Collections.Generic;

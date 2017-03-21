@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SafetyGearsOnline {
+namespace SafetyGearsOnline.Pages.MasterPage {
     
     
-    public partial class Site1 {
+    public partial class template {
         
         /// <summary>
         /// head control.
@@ -22,22 +22,13 @@ namespace SafetyGearsOnline {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
         
         /// <summary>
-        /// form1 control.
+        /// formwrapper control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
-        /// <summary>
-        /// imagelogo1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imagelogo1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm formwrapper;
         
         /// <summary>
         /// homelink control.
@@ -76,58 +67,85 @@ namespace SafetyGearsOnline {
         protected global::System.Web.UI.WebControls.HyperLink contactlink;
         
         /// <summary>
-        /// ContentPlaceHolder2 control.
+        /// bannerCPH control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder2;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder bannerCPH;
         
         /// <summary>
-        /// Image1 control.
+        /// contentwrapperCPH control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder contentwrapperCPH;
         
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// contentleftsideCPH control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder contentleftsideCPH;
         
         /// <summary>
-        /// facebooksm control.
+        /// contentrightsideCPH control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton facebooksm;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder contentrightsideCPH;
         
         /// <summary>
-        /// twittersm control.
+        /// validatehtmllink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton twittersm;
+        protected global::System.Web.UI.WebControls.HyperLink validatehtmllink;
         
         /// <summary>
-        /// blogsm control.
+        /// validatecsslink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton blogsm;
+        protected global::System.Web.UI.WebControls.HyperLink validatecsslink;
+        
+        /// <summary>
+        /// facebooklink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton facebooklink;
+        
+        /// <summary>
+        /// twitterlink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton twitterlink;
+        
+        /// <summary>
+        /// bloggerlink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton bloggerlink;
         
         /// <summary>
         /// adminlink control.
