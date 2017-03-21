@@ -49,13 +49,13 @@ namespace SafetyGearsOnline {
         protected global::System.Web.UI.WebControls.HyperLink homelink;
         
         /// <summary>
-        /// merchandiselink control.
+        /// aboutlink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink merchandiselink;
+        protected global::System.Web.UI.WebControls.HyperLink aboutlink;
         
         /// <summary>
         /// transcriptionlink control.
@@ -67,13 +67,13 @@ namespace SafetyGearsOnline {
         protected global::System.Web.UI.WebControls.HyperLink transcriptionlink;
         
         /// <summary>
-        /// managementlink control.
+        /// contactlink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink managementlink;
+        protected global::System.Web.UI.WebControls.HyperLink contactlink;
         
         /// <summary>
         /// ContentPlaceHolder2 control.

@@ -1,11 +1,11 @@
 ﻿/* Main */
 html							{	background-image:url("../image/Nav.png"); background-repeat: repeat; background-position: center; background-attachment: fixed;	}
-body 							{   background-image:url('../image/safetygearbackground.jpg'); background-repeat: no-repeat; background-position: center center; background-attachment: fixed; }
+body 							{   background-color:white; background-repeat: no-repeat; background-position: center center; background-attachment: fixed; }
 body img						{	width:50%;	}
 
 /* Containers */
 
-#wrapper 						{  	width:960px; margin:0px auto; background-image:url('../image/safetygearbackground.jpg'); clear:both; position:relative;}
+#wrapper 						{  	width:960px; margin:0px auto;  clear:both; position:relative;}
 
 /* TOP */
 		

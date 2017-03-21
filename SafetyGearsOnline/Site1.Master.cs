@@ -16,17 +16,17 @@ namespace SafetyGearsOnline
 
         protected void facebook_Click(object sender, ImageClickEventArgs e)
         {
-            System.Diagnostics.Process.Start("www.facebook.com");
+            System.Diagnostics.Process.Start("https://www.facebook.com");
         }
 
         protected void twitter_Click(object sender, ImageClickEventArgs e)
         {
-            System.Diagnostics.Process.Start("www.twitter.com");
+            System.Diagnostics.Process.Start("https://www.twitter.com");
         }
 
         protected void blog_Click(object sender, ImageClickEventArgs e)
         {
-            System.Diagnostics.Process.Start("www.blog.com");
+            System.Diagnostics.Process.Start("https://www.blogger.com/");
         }
     }
 }

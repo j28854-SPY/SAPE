@@ -13,15 +13,6 @@ namespace SafetyGearsOnline.pages {
     public partial class Contact {
         
         /// <summary>
-        /// contactform control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm contactform;
-        
-        /// <summary>
         /// labemsg control.
         /// </summary>
         /// <remarks>
