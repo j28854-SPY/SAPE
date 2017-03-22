@@ -5,7 +5,3 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="contentwrapperCPH" runat="server">
 </asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="contentleftsideCPH" runat="server">
-</asp:Content>
-<asp:Content ID="Content5" ContentPlaceHolderID="contentrightsideCPH" runat="server">
-</asp:Content>

@@ -85,24 +85,6 @@ namespace SafetyGearsOnline.Pages.MasterPage {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder contentwrapperCPH;
         
         /// <summary>
-        /// contentleftsideCPH control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder contentleftsideCPH;
-        
-        /// <summary>
-        /// contentrightsideCPH control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder contentrightsideCPH;
-        
-        /// <summary>
         /// validatehtmllink control.
         /// </summary>
         /// <remarks>

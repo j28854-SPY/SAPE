@@ -105,10 +105,12 @@
     </Content>
     <Content Include="Pages\about.aspx" />
     <Content Include="Pages\Administration\admin.aspx" />
+    <Content Include="Pages\Administration\Database\merchandise-types.aspx" />
     <Content Include="Pages\contact.aspx" />
     <Content Include="Pages\default.aspx" />
     <Content Include="Pages\MasterPage\template.Master" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Pages\transcription.aspx" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.js" />
@@ -126,7 +128,6 @@
     <Content Include="Global.asax" />
     <Content Include="Images\6banner-safety-equipment.png" />
     <Content Include="Images\cwlh1.jpg" />
-    <Content Include="Pages\transcription.aspx" />
     <Content Include="StyleCSS\masterpagestyle.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -174,6 +175,13 @@
     </Compile>
     <Compile Include="Pages\Administration\admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Administration\Database\merchandise-types.aspx.cs">
+      <DependentUpon>merchandise-types.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Administration\Database\merchandise-types.aspx.designer.cs">
+      <DependentUpon>merchandise-types.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\contact.aspx.cs">
       <DependentUpon>contact.aspx</DependentUpon>

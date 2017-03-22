@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Template Masterpage</title>
+    <title>TemplateMasterpage | Safety & Protective Equipment</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
@@ -63,25 +63,7 @@
 
 
 
-                <div id="contentleftside">
-                    <asp:ContentPlaceHolder ID="contentleftsideCPH" runat="server">
-
-
-
-
-                    </asp:ContentPlaceHolder>
-                </div>
-
-
-
-                <div id="contentrightside">
-                    <asp:ContentPlaceHolder ID="contentrightsideCPH" runat="server">
-
-
-
-
-                    </asp:ContentPlaceHolder>
-                </div>
+                
 
             </asp:ContentPlaceHolder>
 
