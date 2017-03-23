@@ -39,9 +39,21 @@ body img						{	width:50%;	}
 
 /*  content */
 
-#contentleftside                {      }
-#contactRFVnamelink             {   margin-left:34px;   }
-#contactnametextboxlink         {   margin-left:34px;   }
+#contactleftside                {        }
+#contactrightside               {        }
+
+#contactRFVnamelink             {   margin-left:54px;   }
+#contactnametextboxlink         {   margin-left:100px;   }
+
+#contactemailREVlink            {   margin-left:54px;   }
+#contactemailtextboxlink        {   margin-left:50px;   }
+
+#contactsubjectRFVlink          {   margin-left:54px;   }
+#contactsubjecttextboxlink      {   margin-left:90px;   }
+
+#contactmessageRFVlink          {   margin-left:54px;   }
+#contactmessagetextboxlink      {   margin-left:81px;   }
+
 
 
 /* End Content */
