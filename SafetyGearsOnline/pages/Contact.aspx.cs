@@ -13,5 +13,17 @@ namespace SafetyGearsOnline.Pages
         {
 
         }
+
+        protected void contactsendlink_Click(object sender, EventArgs e)
+        {
+
+
+
+
+
+
+
+
+        }
     }
 }
