@@ -96,6 +96,12 @@
       <LastGenOutput>ERD-SGO.cs</LastGenOutput>
     </Content>
     <Content Include="packages.config" />
+    <Content Include="Pages\about.aspx" />
+    <Content Include="Pages\Administration\admin.aspx" />
+    <Content Include="Pages\contact.aspx" />
+    <Content Include="Pages\default.aspx" />
+    <Content Include="Pages\transcription.aspx" />
+    <Content Include="WebForm1.aspx" />
     <EntityDeploy Include="Models\ERD-SGO.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ERD-SGO.Designer.cs</LastGenOutput>
@@ -103,14 +109,8 @@
     <Content Include="Models\ERD-SGO.edmx.diagram">
       <DependentUpon>ERD-SGO.edmx</DependentUpon>
     </Content>
-    <Content Include="Pages\about.aspx" />
-    <Content Include="Pages\Administration\admin.aspx" />
-    <Content Include="Pages\Administration\Database\merchandise-types.aspx" />
-    <Content Include="Pages\contact.aspx" />
-    <Content Include="Pages\default.aspx" />
     <Content Include="Pages\MasterPage\template.Master" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
-    <Content Include="Pages\transcription.aspx" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.js" />
@@ -176,13 +176,6 @@
     <Compile Include="Pages\Administration\admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Administration\Database\merchandise-types.aspx.cs">
-      <DependentUpon>merchandise-types.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Administration\Database\merchandise-types.aspx.designer.cs">
-      <DependentUpon>merchandise-types.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Pages\contact.aspx.cs">
       <DependentUpon>contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -212,9 +205,17 @@
       <DependentUpon>transcription.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Pages\Administration\Database\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

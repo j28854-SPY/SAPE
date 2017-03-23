@@ -1,9 +1,9 @@
-﻿<%@ Page Title="Contact | Safety & Protective Equipment" Language="C#" MasterPageFile="~/Pages/MasterPage/template.Master" AutoEventWireup="true" CodeBehind="contact.aspx.cs" Inherits="SafetyGearsOnline.Pages.contact" %>
+﻿<%@ Page Title="Contact | Safety & Protective Equipment" Language="C#" MasterPageFile="~/Pages/MasterPage/template.Master" AutoEventWireup="true" CodeBehind="contact.aspx.cs" Inherits="SafetyGearsOnline.Pages.contact1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="bannerCPH" runat="server">
-    
-    <div id="contactleftside">
+
+     <div id="contactleftside">
     <table>
         <tr>
             <td><asp:Label ID="contactnamelbllink" runat="server" Text="Name: -"></asp:Label></td>
@@ -50,9 +50,16 @@
     <div id="contactrightside">
 
 
+        <div id="map" style="width:960px; height:300px"></div>
+
+
 
 
     </div>
+
+
+
+
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="contentwrapperCPH" runat="server">

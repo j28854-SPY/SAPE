@@ -8,15 +8,16 @@ using System.Web.UI.WebControls;
 
 namespace SafetyGearsOnline.Pages
 {
-    public partial class contact : System.Web.UI.Page
+    public partial class contact1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void contactsendlink_Click(object sender, EventArgs e)
         {
+
             SmtpClient smtpUser = new SmtpClient();
             smtpUser.EnableSsl = true;
             smtpUser.UseDefaultCredentials = false;
@@ -49,12 +50,6 @@ namespace SafetyGearsOnline.Pages
 
 
             }
-
-
-
-
-
-
 
 
         }

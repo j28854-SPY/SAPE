@@ -10,7 +10,7 @@
 namespace SafetyGearsOnline.Pages {
     
     
-    public partial class contact {
+    public partial class contact1 {
         
         /// <summary>
         /// contactnamelbllink control.
