@@ -50,7 +50,7 @@
     <div id="contactrightside">
 
 
-        <div id="map" style="width:960px; height:300px"></div>
+        <div id="map" style="width:960px; height:500px"></div>
 
 
 
