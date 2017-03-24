@@ -23,14 +23,14 @@ namespace SafetyGearsOnline.Pages
             smtpUser.UseDefaultCredentials = false;
             smtpUser.Host = "smtp.gmail.com";
             smtpUser.Port = 587;
-            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("@gmail.com", "");
+            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("testlcbcompsci@gmail.com", "!T3st!email");
 
             smtpUser.Credentials = credentials;
 
-            MailMessage msg = new MailMessage("skuxzypm@gmail.com", contactemailtextboxlink.Text);
+            MailMessage msg = new MailMessage("testlcbcompsci@gmail.com", contactemailtextboxlink.Text);
             msg.Subject = "Name: " + contactnametextboxlink.Text + " Subject: " + contactsubjecttextboxlink.Text;
             msg.Body = contactmessagetextboxlink.Text;
-            smtpUser.Send(msg);
+            
 
 
             try

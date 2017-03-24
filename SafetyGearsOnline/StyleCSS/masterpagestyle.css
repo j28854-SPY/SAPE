@@ -3,7 +3,7 @@ html							{	background-image:url('../Images');	}
 body 							{   background-image:url(); background-repeat: no-repeat; background-position: center; background-attachment: fixed; }
 body img						{		}
 #map                            {   width:610px; height:450px; float:right;    }
-#staticmap                            {   width:610px; height:450px; float:right;    }
+#staticmap                      {   width:610px; height:450px; float:right;    }
 
 /* begin containers */
 
@@ -62,7 +62,8 @@ body img						{		}
 
 #contactcontent                 {   }
 
-#contactleftside                {   float:left; width:350px; height:450px; background-image:url('../Images/ccbg.jpg');  }
+#contactleftside                {   float:left; width:350px; height:450px; background-image:url('../Images/ccbg1.jpg');  }
+#contactleftsidetable           {   margin-top:70px;    }
 
 #contactRFVnamelink             {   margin-left:54px;   }
 #contactnametextboxlink         {   margin-left:100px;   }
