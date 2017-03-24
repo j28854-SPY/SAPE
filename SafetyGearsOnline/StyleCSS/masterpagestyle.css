@@ -1,20 +1,25 @@
-﻿/* Main */
+﻿/* begin main */
 html							{	background-image:url('../Images');	}
 body 							{   background-image:url(); background-repeat: no-repeat; background-position: center; background-attachment: fixed; }
 body img						{		}
-#map                            {       }
+#map                            {   width:610px; height:450px; float:right;    }
+#staticmap                            {   width:610px; height:450px; float:right;    }
 
-/* Containers */
+/* begin containers */
 
 #wrapper 						{  	 width:960px; margin:0px auto; background-image:url(); clear:both; position:relative;}
 
-/* TOP */
+/* end containers */
+
+/* begin top */
 		
 #top	 						{  	background-color:black; width:100%; overflow:hidden; border-bottom:10px #666666 groove; padding:30px 0 0 0;;}
 #top img						{	width:100%; overflow:hidden; 	}
 
+/* end top */
 
-/* Navigator */
+
+/* begin navigator */
 
 #topnav 						{ 	width:100%; background-image:url('../Images/index.jpg'); clear:both; top:1px; z-index:1; text-align:center; padding:20px 0 10px 0; border-bottom:10px #666666 groove; }						  
 #topnav ul 						{	background-image:url(); }
@@ -28,20 +33,36 @@ body img						{		}
 #topnav a:hover					{	Color:gold; border-color:goldenrod; background-color:grey;	}
 #topnav a:focus					{	Color:white; border-color:goldenrod; background-color:black;	}
 
-/* Banner for javascript */
+/* end navigator */
+
+
+/* begin banner  */
+
 #banner							{		}
 #banner img						{	width:100%; 	}
 
+/* end banner  */
 
 
 
 #subbanner 						{ 	width:100%; background-image:url('../Images/grey-white.jpg'); padding:15px 0; overflow:hidden;  }
 #subbanner h3					{	color:black; font-size:16px; font-weight:bold; text-align:center; line-height:100%; text-shadow:initial;	}
 
-/*  content */
+/*  begin content */
 
-#contactleftside                {        }
-#contactrightside               {        }
+
+
+/*  start contact */
+
+
+
+
+
+/*  start contactleftside */
+
+#contactcontent                 {   }
+
+#contactleftside                {   float:left; width:350px; height:450px; background-image:url('../Images/ccbg.jpg');  }
 
 #contactRFVnamelink             {   margin-left:54px;   }
 #contactnametextboxlink         {   margin-left:100px;   }
@@ -55,12 +76,27 @@ body img						{		}
 #contactmessageRFVlink          {   margin-left:54px;   }
 #contactmessagetextboxlink      {   margin-left:81px;   }
 
+/*  stop contactleftside */
 
 
-/* End Content */
+
+/*  start contactrightside */
+
+#contactrightside               {   float:right;    }
 
 
-/* Footer */
+/*  stop contactrightside */
+
+
+
+
+/* end content */
+
+
+
+
+
+/* begin footer */
 
 #footer 						{  	background-image:url('../Images/BGWrap.png');	 }
 
@@ -71,3 +107,8 @@ body img						{		}
 #bloggerlink 				    {	float:right; margin:0 10px 0 0; width:34px; height:34px; margin:0 10px 0 0px; color:#FFFFFF; margin:5px 5px 10px 0; text-align:right;} 			
 		
 
+/* end footer */
+
+
+
+/* end main */

@@ -1,7 +1,9 @@
 ﻿<%@ Page Title="Contact | Safety & Protective Equipment" Language="C#" MasterPageFile="~/Pages/MasterPage/template.Master" AutoEventWireup="true" CodeBehind="contact.aspx.cs" Inherits="SafetyGearsOnline.Pages.contact1" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<asp:Content ID="contacttheadCPH" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="bannerCPH" runat="server">
+<asp:Content ID="contactbannerCPH" ContentPlaceHolderID="bannerCPH" runat="server">
+
+    <div id="contactcontent">
 
      <div id="contactleftside">
     <table>
@@ -50,7 +52,17 @@
     <div id="contactrightside">
 
 
-        <div id="map" style="width:960px; height:500px"></div>
+        <div id="map">
+
+            <asp:ImageMap ID="staticmap" runat="server" ImageUrl="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap
+                                &markers=color:blue%7Clabel:S%7C40.702147,-74.015794
+                                &markers=color:green%7Clabel:G%7C40.711614,-74.012318
+                                &markers=color:red%7Clabel:C%7C40.718217,-73.998284
+                                &key=AIzaSyBJHM3DIGFZwsTyeDUM3rLogk9ewg2Q04I">
+
+            </asp:ImageMap>
+
+        </div>
 
 
 
@@ -58,9 +70,9 @@
     </div>
 
 
-
+    </div>
 
 
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="contentwrapperCPH" runat="server">
+<asp:Content ID="contactwrapperCPH" ContentPlaceHolderID="contentwrapperCPH" runat="server">
 </asp:Content>
