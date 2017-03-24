@@ -101,6 +101,7 @@
     <Content Include="Pages\contact.aspx" />
     <Content Include="Pages\default.aspx" />
     <Content Include="Pages\transcription.aspx" />
+    <Content Include="Scripts\contactmap.js" />
     <Content Include="WebForm1.aspx" />
     <EntityDeploy Include="Models\ERD-SGO.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
