@@ -4,13 +4,16 @@
 <asp:Content ID="contactbannerCPH" ContentPlaceHolderID="bannerCPH" runat="server">
 
 
-    
+    <!--begin wrapper container-->
+
+
+    <!--begin contactcontent divider of wrapper-->
 
     <div id="contactcontent">
 
 
 
-
+    <!--begin contactcontent leftside-->
 
 
      <div id="contactleftside">
@@ -55,14 +58,14 @@
     </table> 
     </div>   
 
+    <!--end contactcontent leftside-->
 
 
 
 
 
 
-
-
+    <!--begin contactcontent rightside-->
 
     <div id="contactrightside">
 
@@ -78,13 +81,16 @@
 
     </div>
 
-
+    <!--end contactcontent rightside-->
 
 
 
 
     </div>
 
+    <!--end contactcontent divider of wrapper-->
+
+    <!--end wrapper container-->
 
 </asp:Content>
 <asp:Content ID="contactwrapperCPH" ContentPlaceHolderID="contentwrapperCPH" runat="server">
