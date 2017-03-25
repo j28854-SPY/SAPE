@@ -29,5 +29,14 @@ namespace SafetyGearsOnline.Pages.Administration.Database {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox dbmertypesnametextboxlink;
+        
+        /// <summary>
+        /// upload_mer_types_button_results control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label upload_mer_types_button_results;
     }
 }

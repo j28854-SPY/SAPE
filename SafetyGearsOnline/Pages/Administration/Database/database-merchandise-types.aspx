@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Pages/MasterPage/template.Master" AutoEventWireup="true" CodeBehind="database-merchandise-types.aspx.cs" Inherits="SafetyGearsOnline.Pages.Administration.Database.database_merchandise_types" %>
+﻿<%@ Page Title="Add Merchandise Types | Safety & Protective Equipment" Language="C#" MasterPageFile="~/Pages/MasterPage/template.Master" AutoEventWireup="true" CodeBehind="database-merchandise-types.aspx.cs" Inherits="SafetyGearsOnline.Pages.Administration.Database.database_merchandise_types" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="bannerCPH" runat="server">
@@ -17,14 +17,25 @@
                 </tr>
 
                 
-
+                
 
             </table>
 
+            <table id="mertypescontent">
+                <tr>
 
-            <asp:button runat="server" text="Upload Mechandise Types" OnClick="upload_mer_types_button" />
+                    <td><asp:button runat="server" text="Upload Mechandise Types" OnClick="upload_mer_types_button" /></td>
+            
+
+                    <td></td>
+
+                </tr>
 
 
+                <tr>
+                    <td><asp:Label ID="upload_mer_types_button_results" runat="server" Text=""></asp:Label></td>
+                </tr>
+            </table>
         </div>
 
 

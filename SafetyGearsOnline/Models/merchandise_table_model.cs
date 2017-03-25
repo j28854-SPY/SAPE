@@ -8,7 +8,7 @@ namespace SafetyGearsOnline.Models
     public class merchandise_table_model
     {
 
-
+        /*begin getting merchandise from table*/
         private merchandise_table retrieve_merchandise(int id)
         {
             try
@@ -30,9 +30,11 @@ namespace SafetyGearsOnline.Models
             }
 
         }
+        /*end updating merchandise cart code similar to merchandise types*/
 
 
 
+        /*begin array list of merchandise from table*/
         private List<merchandise_table> retrieve_all_merchandise()
         {
             try
@@ -53,7 +55,10 @@ namespace SafetyGearsOnline.Models
             }
         }
 
+        /*end array list of merchandise from table*/
 
+
+        /*begin array list of merchandise types from table*/
         private List<merchandise_table> retrieve_merchandise_types(int idtype)
         {
             try
@@ -74,7 +79,10 @@ namespace SafetyGearsOnline.Models
             }
         }
 
+        /*end array list of merchandise types from table*/
 
+
+        /*begin adding merchandise to table*/
 
         public string AddMerchandise(merchandise_table merchandise)
         {
@@ -84,7 +92,7 @@ namespace SafetyGearsOnline.Models
                 db.merchandise_table.Add(merchandise);
 
                 db.SaveChanges();
-                return merchandise.name + "Added Sucessfull";
+                return merchandise.name + " Added Sucessfull";
 
 
 
@@ -103,11 +111,11 @@ namespace SafetyGearsOnline.Models
 
         }
 
+        /*end adding merchandise to table*/
 
 
 
-
-
+        /*begin deleting merchandise to table*/
         public string DeleteMerchandise(int id)
         {
             try
@@ -119,7 +127,7 @@ namespace SafetyGearsOnline.Models
                 db.merchandise_table.Remove(merchandise);
 
                 db.SaveChanges();
-                return merchandise.name + "Deleted Sucessfull";
+                return merchandise.name + " Deleted Sucessfull";
             }
             catch (Exception e)
             {
@@ -134,12 +142,12 @@ namespace SafetyGearsOnline.Models
 
 
         }
+        /*end deleting merchandise to table*/
 
 
 
 
-
-
+        /*begin updating merchandise to table*/
         public string UpdateMerchandise(int id, merchandise_table merchandise)
         {
             try
@@ -172,7 +180,7 @@ namespace SafetyGearsOnline.Models
 
         }
 
-
+        /*end updating merchandise to table*/
 
 
     }

@@ -7,7 +7,7 @@ namespace SafetyGearsOnline.Models
 {
     public class merchandise_types_model
     {
-
+        /*begin adding merchandise types code*/
 
         public string AddMerchandise(merchandise_types merchandisetype)
         {
@@ -20,7 +20,7 @@ namespace SafetyGearsOnline.Models
                 db.merchandise_types.Add(merchandisetype);
 
                 db.SaveChanges();
-                return merchandisetype.name + "Added Sucessfull";
+                return merchandisetype.name + " Added Sucessfull";
 
 
 
@@ -39,10 +39,10 @@ namespace SafetyGearsOnline.Models
         }
 
 
+        /*end adding merchandise types code*/
 
 
-
-
+        /*begin deleting merchandise types code*/
         public string DeleteMerchandise(int id)
         {
 
@@ -57,7 +57,7 @@ namespace SafetyGearsOnline.Models
                 db.merchandise_types.Remove(merchandisetype);
 
                 db.SaveChanges();
-                return merchandisetype.name + "Deleted Sucessfull";
+                return merchandisetype.name + " Deleted Sucessfull";
             }
             catch (Exception e)
             {
@@ -72,11 +72,11 @@ namespace SafetyGearsOnline.Models
 
         }
 
+        /*end deleting merchandise types code*/
 
 
 
-
-
+        /*begin updating merchandise types code*/
         public string UpdateMerchandise(int id, merchandise_types merchandisetype)
         {
 
@@ -108,7 +108,7 @@ namespace SafetyGearsOnline.Models
 
         }
 
-
+        /*end updating merchandise types code*/
 
 
     }

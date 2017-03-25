@@ -7,7 +7,7 @@ namespace SafetyGearsOnline.Models
 {
     public class merchandise_cart_model
     {
-
+        /*begin adding merchandise cart code similar to merchandise types*/
 
         public string AddMerchandise(merchandise_cart cart)
         {
@@ -20,7 +20,7 @@ namespace SafetyGearsOnline.Models
                 db.merchandise_cart.Add(cart);
 
                 db.SaveChanges();
-                return cart.datebuy + "Added Sucessfull";
+                return cart.datebuy + " Added Sucessfull";
 
 
 
@@ -38,10 +38,10 @@ namespace SafetyGearsOnline.Models
 
         }
 
+        /*end adding merchandise cart code similar to merchandise types*/
 
 
-
-
+        /*begin deleting merchandise cart code similar to merchandise types*/
 
         public string DeleteMerchandise(int id)
         {
@@ -57,7 +57,7 @@ namespace SafetyGearsOnline.Models
                 db.merchandise_cart.Remove(cart);
 
                 db.SaveChanges();
-                return cart.datebuy + "Deleted Sucessfull";
+                return cart.datebuy + " Deleted Sucessfull";
             }
             catch (Exception e)
             {
@@ -72,11 +72,11 @@ namespace SafetyGearsOnline.Models
 
         }
 
+        /*end deleting merchandise cart code similar to merchandise types*/
 
 
 
-
-
+        /*begin updating merchandise cart code similar to merchandise types*/
         public string UpdateMerchandise(int id, merchandise_cart cart)
         {
 
@@ -111,7 +111,7 @@ namespace SafetyGearsOnline.Models
 
         }
 
-
+        /*end updating merchandise cart code similar to merchandise types*/
 
     }
 }

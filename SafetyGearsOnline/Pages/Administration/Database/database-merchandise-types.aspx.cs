@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using SafetyGearsOnline.Models;
 
 namespace SafetyGearsOnline.Pages.Administration.Database
 {
@@ -16,7 +17,21 @@ namespace SafetyGearsOnline.Pages.Administration.Database
 
         protected void upload_mer_types_button(object sender, EventArgs e)
         {
+            merchandise_types_model model = new merchandise_types_model();
+            merchandise_types baru = upload_merchandise_types();
+
+            upload_mer_types_button_results.Text = model.AddMerchandise(baru);
+        }
+
+        private merchandise_types upload_merchandise_types()
+        {
+            merchandise_types p = new merchandise_types();
+            p.name = dbmertypesnametextboxlink.Text;
+
+            return p;
+
 
         }
+
     }
 }
