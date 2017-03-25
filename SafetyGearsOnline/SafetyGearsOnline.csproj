@@ -97,6 +97,16 @@
       <DependentUpon>erd-sgoslocaldb.edmx</DependentUpon>
       <LastGenOutput>erd-sgoslocaldb.cs</LastGenOutput>
     </Content>
+    <Content Include="Models\erd-sgosonlinedb.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>erd-sgosonlinedb.edmx</DependentUpon>
+      <LastGenOutput>erd-sgosonlinedb.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\erd-sgosonlinedb.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>erd-sgosonlinedb.edmx</DependentUpon>
+      <LastGenOutput>erd-sgosonlinedb.cs</LastGenOutput>
+    </Content>
     <Content Include="packages.config" />
     <Content Include="Pages\about.aspx" />
     <Content Include="Pages\Administration\admin.aspx" />
@@ -112,6 +122,13 @@
     </EntityDeploy>
     <Content Include="Models\erd-sgoslocaldb.edmx.diagram">
       <DependentUpon>erd-sgoslocaldb.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\erd-sgosonlinedb.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>erd-sgosonlinedb.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\erd-sgosonlinedb.edmx.diagram">
+      <DependentUpon>erd-sgosonlinedb.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
@@ -153,17 +170,32 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>erd-sgoslocaldb.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\erd-sgosonlinedb.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>erd-sgosonlinedb.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\erd-sgosonlinedb.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>erd-sgosonlinedb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\erd-sgosonlinedb.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>erd-sgosonlinedb.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\merchandise-cart-model.cs" />
     <Compile Include="Models\merchandise-table-model.cs" />
     <Compile Include="Models\merchandise-types-model.cs" />
     <Compile Include="Models\merchandise_cart.cs">
-      <DependentUpon>erd-sgoslocaldb.tt</DependentUpon>
+      <DependentUpon>erd-sgosonlinedb.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\merchandise_table.cs">
-      <DependentUpon>erd-sgoslocaldb.tt</DependentUpon>
+      <DependentUpon>erd-sgosonlinedb.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\merchandise_types.cs">
-      <DependentUpon>erd-sgoslocaldb.tt</DependentUpon>
+      <DependentUpon>erd-sgosonlinedb.tt</DependentUpon>
     </Compile>
     <Compile Include="Pages\about.aspx.cs">
       <DependentUpon>about.aspx</DependentUpon>
