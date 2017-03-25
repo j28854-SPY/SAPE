@@ -16,7 +16,7 @@ namespace SafetyGearsOnline.Models
 
             try
             {
-                sgosdbEntities db = new sgosdbEntities();
+                sgosdblocal db = new sgosdblocal();
                 db.merchandise_cart.Add(cart);
 
                 db.SaveChanges();
@@ -50,7 +50,7 @@ namespace SafetyGearsOnline.Models
 
             try
             {
-                sgosdbEntities db = new sgosdbEntities();
+                sgosdblocal db = new sgosdblocal();
                 merchandise_cart cart = db.merchandise_cart.Find(id);
 
                 db.merchandise_cart.Attach(cart);
@@ -84,7 +84,7 @@ namespace SafetyGearsOnline.Models
 
             try
             {
-                sgosdbEntities db = new sgosdbEntities();
+                sgosdblocal db = new sgosdblocal();
                 merchandise_cart m = db.merchandise_cart.Find(id);
 
                 m.customerid = cart.customerid;

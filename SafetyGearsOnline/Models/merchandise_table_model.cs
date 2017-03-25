@@ -9,14 +9,78 @@ namespace SafetyGearsOnline.Models
     {
 
 
-        public string AddMerchandise(merchandise_table merchandise)
+        private merchandise_table retrieve_merchandise(int id)
         {
-
-
-
             try
             {
-                sgosdbEntities db = new sgosdbEntities();
+                using(sgosdblocal db = new sgosdblocal())
+                {
+                    merchandise_table merchandise = db.merchandise_table.Find(id);
+                    return merchandise;
+
+
+
+                }
+            }
+            catch (Exception)
+            {
+                return null;
+
+
+            }
+
+        }
+
+
+
+        private List<merchandise_table> retrieve_all_merchandise()
+        {
+            try
+            {
+                using(sgosdblocal db = new sgosdblocal())
+                {
+                    List<merchandise_table> merchandise = (from x in db.merchandise_table select x).ToList();
+                    return merchandise;
+
+
+                }               
+            }
+            catch (Exception)
+            {
+                return null;
+
+
+            }
+        }
+
+
+        private List<merchandise_table> retrieve_merchandise_types(int idtype)
+        {
+            try
+            {
+                using(sgosdblocal db = new sgosdblocal())
+                {
+                    List<merchandise_table> merchandise = (from x in db.merchandise_table where x.idtype == idtype select x).ToList();
+                    return merchandise;
+
+
+                }
+            }
+            catch
+            {
+                return null;
+
+
+            }
+        }
+
+
+
+        public string AddMerchandise(merchandise_table merchandise)
+        {
+            try
+            {
+                sgosdblocal db = new sgosdblocal();
                 db.merchandise_table.Add(merchandise);
 
                 db.SaveChanges();
@@ -30,6 +94,7 @@ namespace SafetyGearsOnline.Models
 
 
                 return "Something When Wrong" + e;
+
 
             }
 
@@ -45,12 +110,9 @@ namespace SafetyGearsOnline.Models
 
         public string DeleteMerchandise(int id)
         {
-
-
-
             try
             {
-                sgosdbEntities db = new sgosdbEntities();
+                sgosdblocal db = new sgosdblocal();
                 merchandise_table merchandise = db.merchandise_table.Find(id);
 
                 db.merchandise_table.Attach(merchandise);
@@ -64,6 +126,7 @@ namespace SafetyGearsOnline.Models
 
 
                 return "Something When Wrong" + e;
+
 
             }
 
@@ -79,12 +142,9 @@ namespace SafetyGearsOnline.Models
 
         public string UpdateMerchandise(int id, merchandise_table merchandise)
         {
-
-
-
             try
             {
-                sgosdbEntities db = new sgosdbEntities();
+                sgosdblocal db = new sgosdblocal();
                 merchandise_table m = db.merchandise_table.Find(id);
 
                 m.idtype = merchandise.idtype;
@@ -103,6 +163,7 @@ namespace SafetyGearsOnline.Models
 
 
                 return "Something When Wrong" + e;
+
 
             }
 

@@ -16,7 +16,7 @@ namespace SafetyGearsOnline.Models
 
             try
             {
-                sgosdbEntities db = new sgosdbEntities();
+                sgosdblocal db = new sgosdblocal();
                 db.merchandise_types.Add(merchandisetype);
 
                 db.SaveChanges();
@@ -50,7 +50,7 @@ namespace SafetyGearsOnline.Models
 
             try
             {
-                sgosdbEntities db = new sgosdbEntities();
+                sgosdblocal db = new sgosdblocal();
                 merchandise_types merchandisetype = db.merchandise_types.Find(id);
 
                 db.merchandise_types.Attach(merchandisetype);
@@ -84,7 +84,7 @@ namespace SafetyGearsOnline.Models
 
             try
             {
-                sgosdbEntities db = new sgosdbEntities();
+                sgosdblocal db = new sgosdblocal();
                 merchandise_types m = db.merchandise_types.Find(id);
 
                

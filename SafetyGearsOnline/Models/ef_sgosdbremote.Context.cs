@@ -13,10 +13,10 @@ namespace SafetyGearsOnline.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class db_1525588_co5027syudbEntities : DbContext
+    public partial class sgosdbremote : DbContext
     {
-        public db_1525588_co5027syudbEntities()
-            : base("name=db_1525588_co5027syudbEntities")
+        public sgosdbremote()
+            : base("name=sgosdbremote")
         {
         }
     

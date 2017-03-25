@@ -5,7 +5,7 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
       <Schema Namespace="db_1525588_co5027syudbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="merchandise-cart">
+        <EntityType Name="merchandise_cart">
           <Key>
             <PropertyRef Name="id" />
           </Key>
@@ -16,7 +16,7 @@
           <Property Name="datebuy" Type="datetime" />
           <Property Name="incart" Type="bit" Nullable="false" />
         </EntityType>
-        <EntityType Name="merchandise-table">
+        <EntityType Name="merchandise_table">
           <Key>
             <PropertyRef Name="id" />
           </Key>
@@ -27,52 +27,52 @@
           <Property Name="about" Type="text" />
           <Property Name="image" Type="varchar" MaxLength="50" />
         </EntityType>
-        <EntityType Name="merchandise-types">
+        <EntityType Name="merchandise_types">
           <Key>
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
-        <Association Name="FK_merchandise-cart_merchandise-table">
-          <End Role="merchandise-table" Type="Self.merchandise-table" Multiplicity="1">
+        <Association Name="FK_merchandise_cart_merchandise_table">
+          <End Role="merchandise_table" Type="Self.merchandise_table" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="merchandise-cart" Type="Self.merchandise-cart" Multiplicity="*" />
+          <End Role="merchandise_cart" Type="Self.merchandise_cart" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="merchandise-table">
+            <Principal Role="merchandise_table">
               <PropertyRef Name="id" />
             </Principal>
-            <Dependent Role="merchandise-cart">
+            <Dependent Role="merchandise_cart">
               <PropertyRef Name="merchandiseid" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_merchandise-table_merchandise-types">
-          <End Role="merchandise-types" Type="Self.merchandise-types" Multiplicity="1">
+        <Association Name="FK_merchandise_table_merchandise_types">
+          <End Role="merchandise_types" Type="Self.merchandise_types" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="merchandise-table" Type="Self.merchandise-table" Multiplicity="*" />
+          <End Role="merchandise_table" Type="Self.merchandise_table" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="merchandise-types">
+            <Principal Role="merchandise_types">
               <PropertyRef Name="id" />
             </Principal>
-            <Dependent Role="merchandise-table">
+            <Dependent Role="merchandise_table">
               <PropertyRef Name="idtype" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="db_1525588_co5027syudbModelStoreContainer">
-          <EntitySet Name="merchandise-cart" EntityType="Self.merchandise-cart" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="merchandise-table" EntityType="Self.merchandise-table" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="merchandise-types" EntityType="Self.merchandise-types" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK_merchandise-cart_merchandise-table" Association="Self.FK_merchandise-cart_merchandise-table">
-            <End Role="merchandise-table" EntitySet="merchandise-table" />
-            <End Role="merchandise-cart" EntitySet="merchandise-cart" />
+          <EntitySet Name="merchandise_cart" EntityType="Self.merchandise_cart" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="merchandise_table" EntityType="Self.merchandise_table" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="merchandise_types" EntityType="Self.merchandise_types" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_merchandise_cart_merchandise_table" Association="Self.FK_merchandise_cart_merchandise_table">
+            <End Role="merchandise_table" EntitySet="merchandise_table" />
+            <End Role="merchandise_cart" EntitySet="merchandise_cart" />
           </AssociationSet>
-          <AssociationSet Name="FK_merchandise-table_merchandise-types" Association="Self.FK_merchandise-table_merchandise-types">
-            <End Role="merchandise-types" EntitySet="merchandise-types" />
-            <End Role="merchandise-table" EntitySet="merchandise-table" />
+          <AssociationSet Name="FK_merchandise_table_merchandise_types" Association="Self.FK_merchandise_table_merchandise_types">
+            <End Role="merchandise_types" EntitySet="merchandise_types" />
+            <End Role="merchandise_table" EntitySet="merchandise_table" />
           </AssociationSet>
         </EntityContainer>
       </Schema>
@@ -141,7 +141,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="db_1525588_co5027syudbEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="sgosdbremote" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="merchandise_cart" EntityType="Self.merchandise_cart" />
           <EntitySet Name="merchandise_table" EntityType="Self.merchandise_table" />
           <EntitySet Name="merchandise_types" EntityType="Self.merchandise_types" />
@@ -159,10 +159,10 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="db_1525588_co5027syudbModelStoreContainer" CdmEntityContainer="db_1525588_co5027syudbEntities">
+        <EntityContainerMapping StorageEntityContainer="db_1525588_co5027syudbModelStoreContainer" CdmEntityContainer="sgosdbremote">
           <EntitySetMapping Name="merchandise_cart">
             <EntityTypeMapping TypeName="db_1525588_co5027syudbModel.merchandise_cart">
-              <MappingFragment StoreEntitySet="merchandise-cart">
+              <MappingFragment StoreEntitySet="merchandise_cart">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="customerid" ColumnName="customerid" />
                 <ScalarProperty Name="merchandiseid" ColumnName="merchandiseid" />
@@ -174,7 +174,7 @@
           </EntitySetMapping>
           <EntitySetMapping Name="merchandise_table">
             <EntityTypeMapping TypeName="db_1525588_co5027syudbModel.merchandise_table">
-              <MappingFragment StoreEntitySet="merchandise-table">
+              <MappingFragment StoreEntitySet="merchandise_table">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="idtype" ColumnName="idtype" />
                 <ScalarProperty Name="name" ColumnName="name" />
@@ -186,7 +186,7 @@
           </EntitySetMapping>
           <EntitySetMapping Name="merchandise_types">
             <EntityTypeMapping TypeName="db_1525588_co5027syudbModel.merchandise_types">
-              <MappingFragment StoreEntitySet="merchandise-types">
+              <MappingFragment StoreEntitySet="merchandise_types">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
               </MappingFragment>

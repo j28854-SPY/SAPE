@@ -87,48 +87,49 @@
     <Content Include="Images\index.jpg" />
     <Content Include="Images\Nav.png" />
     <Content Include="Images\safetygearbackground.jpg" />
-    <Content Include="Models\erd-sgoslocaldb.Context.tt">
+    <Content Include="Models\ef_sgosdblocal.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>erd-sgoslocaldb.edmx</DependentUpon>
-      <LastGenOutput>erd-sgoslocaldb.Context.cs</LastGenOutput>
+      <DependentUpon>ef_sgosdblocal.edmx</DependentUpon>
+      <LastGenOutput>ef_sgosdblocal.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\erd-sgoslocaldb.tt">
+    <Content Include="Models\ef_sgosdblocal.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>erd-sgoslocaldb.edmx</DependentUpon>
-      <LastGenOutput>erd-sgoslocaldb.cs</LastGenOutput>
+      <DependentUpon>ef_sgosdblocal.edmx</DependentUpon>
+      <LastGenOutput>ef_sgosdblocal.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\erd-sgosonlinedb.Context.tt">
+    <Content Include="Models\ef_sgosdbremote.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>erd-sgosonlinedb.edmx</DependentUpon>
-      <LastGenOutput>erd-sgosonlinedb.Context.cs</LastGenOutput>
+      <DependentUpon>ef_sgosdbremote.edmx</DependentUpon>
+      <LastGenOutput>ef_sgosdbremote.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\erd-sgosonlinedb.tt">
+    <Content Include="Models\ef_sgosdbremote.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>erd-sgosonlinedb.edmx</DependentUpon>
-      <LastGenOutput>erd-sgosonlinedb.cs</LastGenOutput>
+      <DependentUpon>ef_sgosdbremote.edmx</DependentUpon>
+      <LastGenOutput>ef_sgosdbremote.cs</LastGenOutput>
     </Content>
     <Content Include="packages.config" />
     <Content Include="Pages\about.aspx" />
     <Content Include="Pages\Administration\admin.aspx" />
+    <Content Include="Pages\Administration\Database\database-merchandise-types.aspx" />
     <Content Include="Pages\contact.aspx" />
     <Content Include="Pages\default.aspx" />
     <Content Include="Pages\transcription.aspx" />
     <Content Include="Scripts\contactmap.js" />
     <Content Include="WebForm1.aspx" />
     <Content Include="Pages\MasterPage\template.Master" />
-    <EntityDeploy Include="Models\erd-sgoslocaldb.edmx">
+    <EntityDeploy Include="Models\ef_sgosdblocal.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>erd-sgoslocaldb.Designer.cs</LastGenOutput>
+      <LastGenOutput>ef_sgosdblocal.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\erd-sgoslocaldb.edmx.diagram">
-      <DependentUpon>erd-sgoslocaldb.edmx</DependentUpon>
+    <Content Include="Models\ef_sgosdblocal.edmx.diagram">
+      <DependentUpon>ef_sgosdblocal.edmx</DependentUpon>
     </Content>
-    <EntityDeploy Include="Models\erd-sgosonlinedb.edmx">
+    <EntityDeploy Include="Models\ef_sgosdbremote.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>erd-sgosonlinedb.Designer.cs</LastGenOutput>
+      <LastGenOutput>ef_sgosdbremote.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\erd-sgosonlinedb.edmx.diagram">
-      <DependentUpon>erd-sgosonlinedb.edmx</DependentUpon>
+    <Content Include="Models\ef_sgosdbremote.edmx.diagram">
+      <DependentUpon>ef_sgosdbremote.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
@@ -155,48 +156,48 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\erd-sgoslocaldb.Context.cs">
+    <Compile Include="Models\ef_sgosdblocal.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>erd-sgoslocaldb.Context.tt</DependentUpon>
+      <DependentUpon>ef_sgosdblocal.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\erd-sgoslocaldb.cs">
+    <Compile Include="Models\ef_sgosdblocal.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>erd-sgoslocaldb.tt</DependentUpon>
+      <DependentUpon>ef_sgosdblocal.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\erd-sgoslocaldb.Designer.cs">
+    <Compile Include="Models\ef_sgosdblocal.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>erd-sgoslocaldb.edmx</DependentUpon>
+      <DependentUpon>ef_sgosdblocal.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\erd-sgosonlinedb.Context.cs">
+    <Compile Include="Models\ef_sgosdbremote.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>erd-sgosonlinedb.Context.tt</DependentUpon>
+      <DependentUpon>ef_sgosdbremote.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\erd-sgosonlinedb.cs">
+    <Compile Include="Models\ef_sgosdbremote.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>erd-sgosonlinedb.tt</DependentUpon>
+      <DependentUpon>ef_sgosdbremote.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\erd-sgosonlinedb.Designer.cs">
+    <Compile Include="Models\ef_sgosdbremote.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>erd-sgosonlinedb.edmx</DependentUpon>
+      <DependentUpon>ef_sgosdbremote.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\merchandise-cart-model.cs" />
-    <Compile Include="Models\merchandise-table-model.cs" />
-    <Compile Include="Models\merchandise-types-model.cs" />
     <Compile Include="Models\merchandise_cart.cs">
-      <DependentUpon>erd-sgosonlinedb.tt</DependentUpon>
+      <DependentUpon>ef_sgosdbremote.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\merchandise_cart_model.cs" />
     <Compile Include="Models\merchandise_table.cs">
-      <DependentUpon>erd-sgosonlinedb.tt</DependentUpon>
+      <DependentUpon>ef_sgosdbremote.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\merchandise_table_model.cs" />
     <Compile Include="Models\merchandise_types.cs">
-      <DependentUpon>erd-sgosonlinedb.tt</DependentUpon>
+      <DependentUpon>ef_sgosdbremote.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\merchandise_types_model.cs" />
     <Compile Include="Pages\about.aspx.cs">
       <DependentUpon>about.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -210,6 +211,13 @@
     </Compile>
     <Compile Include="Pages\Administration\admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Administration\Database\database-merchandise-types.aspx.cs">
+      <DependentUpon>database-merchandise-types.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Administration\Database\database-merchandise-types.aspx.designer.cs">
+      <DependentUpon>database-merchandise-types.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\contact.aspx.cs">
       <DependentUpon>contact.aspx</DependentUpon>
@@ -250,7 +258,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Pages\Administration\Database\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
