@@ -16,11 +16,11 @@ namespace SafetyGearsOnline.Models
 
             try
             {
-                SGODBEntities1 db = new SGODBEntities1();
+                sgosdbEntities db = new sgosdbEntities();
                 db.merchandise_table.Add(merchandise);
 
                 db.SaveChanges();
-                return merchandise.Name + "Added Sucessfull";
+                return merchandise.name + "Added Sucessfull";
 
 
 
@@ -50,14 +50,14 @@ namespace SafetyGearsOnline.Models
 
             try
             {
-                SGODBEntities1 db = new SGODBEntities1();
+                sgosdbEntities db = new sgosdbEntities();
                 merchandise_table merchandise = db.merchandise_table.Find(id);
 
                 db.merchandise_table.Attach(merchandise);
                 db.merchandise_table.Remove(merchandise);
 
                 db.SaveChanges();
-                return merchandise.Name + "Deleted Sucessfull";
+                return merchandise.name + "Deleted Sucessfull";
             }
             catch (Exception e)
             {
@@ -84,14 +84,14 @@ namespace SafetyGearsOnline.Models
 
             try
             {
-                SGODBEntities1 db = new SGODBEntities1();
+                sgosdbEntities db = new sgosdbEntities();
                 merchandise_table m = db.merchandise_table.Find(id);
 
                 m.idtype = merchandise.idtype;
-                m.Name = merchandise.Name;
-                m.Price = merchandise.Price;
-                m.About = merchandise.About;
-                m.Image = merchandise.Image;
+                m.name = merchandise.name;
+                m.price = merchandise.price;
+                m.about = merchandise.about;
+                m.image = merchandise.image;
 
                 db.SaveChanges();
                 return "Updated Successfull";

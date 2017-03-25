@@ -13,10 +13,10 @@ namespace SafetyGearsOnline.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class SGODBEntities1 : DbContext
+    public partial class sgosdbEntities : DbContext
     {
-        public SGODBEntities1()
-            : base("name=SGODBEntities1")
+        public sgosdbEntities()
+            : base("name=sgosdbEntities")
         {
         }
     

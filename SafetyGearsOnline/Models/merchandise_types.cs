@@ -21,7 +21,7 @@ namespace SafetyGearsOnline.Models
         }
     
         public int id { get; set; }
-        public byte[] Name { get; set; }
+        public string name { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<merchandise_table> merchandise_table { get; set; }

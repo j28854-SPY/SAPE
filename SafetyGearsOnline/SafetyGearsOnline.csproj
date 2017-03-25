@@ -87,15 +87,15 @@
     <Content Include="Images\index.jpg" />
     <Content Include="Images\Nav.png" />
     <Content Include="Images\safetygearbackground.jpg" />
-    <Content Include="Models\ERD-SGO.Context.tt">
+    <Content Include="Models\erd-sgoslocaldb.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ERD-SGO.edmx</DependentUpon>
-      <LastGenOutput>ERD-SGO.Context.cs</LastGenOutput>
+      <DependentUpon>erd-sgoslocaldb.edmx</DependentUpon>
+      <LastGenOutput>erd-sgoslocaldb.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\ERD-SGO.tt">
+    <Content Include="Models\erd-sgoslocaldb.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ERD-SGO.edmx</DependentUpon>
-      <LastGenOutput>ERD-SGO.cs</LastGenOutput>
+      <DependentUpon>erd-sgoslocaldb.edmx</DependentUpon>
+      <LastGenOutput>erd-sgoslocaldb.cs</LastGenOutput>
     </Content>
     <Content Include="packages.config" />
     <Content Include="Pages\about.aspx" />
@@ -105,14 +105,14 @@
     <Content Include="Pages\transcription.aspx" />
     <Content Include="Scripts\contactmap.js" />
     <Content Include="WebForm1.aspx" />
-    <EntityDeploy Include="Models\ERD-SGO.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ERD-SGO.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\ERD-SGO.edmx.diagram">
-      <DependentUpon>ERD-SGO.edmx</DependentUpon>
-    </Content>
     <Content Include="Pages\MasterPage\template.Master" />
+    <EntityDeploy Include="Models\erd-sgoslocaldb.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>erd-sgoslocaldb.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\erd-sgoslocaldb.edmx.diagram">
+      <DependentUpon>erd-sgoslocaldb.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
@@ -138,32 +138,32 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ERD-SGO.Context.cs">
+    <Compile Include="Models\erd-sgoslocaldb.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ERD-SGO.Context.tt</DependentUpon>
+      <DependentUpon>erd-sgoslocaldb.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ERD-SGO.cs">
+    <Compile Include="Models\erd-sgoslocaldb.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ERD-SGO.tt</DependentUpon>
+      <DependentUpon>erd-sgoslocaldb.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ERD-SGO.Designer.cs">
+    <Compile Include="Models\erd-sgoslocaldb.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ERD-SGO.edmx</DependentUpon>
+      <DependentUpon>erd-sgoslocaldb.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\merchandise-cart-model.cs" />
     <Compile Include="Models\merchandise-table-model.cs" />
     <Compile Include="Models\merchandise-types-model.cs" />
     <Compile Include="Models\merchandise_cart.cs">
-      <DependentUpon>ERD-SGO.tt</DependentUpon>
+      <DependentUpon>erd-sgoslocaldb.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\merchandise_table.cs">
-      <DependentUpon>ERD-SGO.tt</DependentUpon>
+      <DependentUpon>erd-sgoslocaldb.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\merchandise_types.cs">
-      <DependentUpon>ERD-SGO.tt</DependentUpon>
+      <DependentUpon>erd-sgoslocaldb.tt</DependentUpon>
     </Compile>
     <Compile Include="Pages\about.aspx.cs">
       <DependentUpon>about.aspx</DependentUpon>

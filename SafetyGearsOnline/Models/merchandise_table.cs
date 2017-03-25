@@ -22,10 +22,10 @@ namespace SafetyGearsOnline.Models
     
         public int id { get; set; }
         public int idtype { get; set; }
-        public string Name { get; set; }
-        public Nullable<int> Price { get; set; }
-        public string About { get; set; }
-        public string Image { get; set; }
+        public string name { get; set; }
+        public Nullable<decimal> price { get; set; }
+        public string about { get; set; }
+        public string image { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<merchandise_cart> merchandise_cart { get; set; }

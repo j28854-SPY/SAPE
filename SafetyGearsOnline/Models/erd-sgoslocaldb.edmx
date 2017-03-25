@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="SGODBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="sgosdbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="merchandise-cart">
           <Key>
             <PropertyRef Name="id" />
@@ -22,20 +22,22 @@
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="idtype" Type="int" Nullable="false" />
-          <Property Name="Name" Type="varchar" MaxLength="50" />
-          <Property Name="Price" Type="int" />
-          <Property Name="About" Type="text" />
-          <Property Name="Image" Type="varchar(max)" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+          <Property Name="price" Type="decimal" Precision="8" Scale="2" />
+          <Property Name="about" Type="text" />
+          <Property Name="image" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="merchandise-types">
           <Key>
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Name" Type="varbinary" MaxLength="50" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <Association Name="FK_merchandise-cart_merchandise-table">
-          <End Role="merchandise-table" Type="Self.merchandise-table" Multiplicity="1" />
+          <End Role="merchandise-table" Type="Self.merchandise-table" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="merchandise-cart" Type="Self.merchandise-cart" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="merchandise-table">
@@ -60,7 +62,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="SGODBModelStoreContainer">
+        <EntityContainer Name="sgosdbModelStoreContainer">
           <EntitySet Name="merchandise-cart" EntityType="Self.merchandise-cart" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="merchandise-table" EntityType="Self.merchandise-table" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="merchandise-types" EntityType="Self.merchandise-types" Schema="dbo" store:Type="Tables" />
@@ -77,7 +79,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="SGODBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="sgosdbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="merchandise_cart">
           <Key>
             <PropertyRef Name="id" />
@@ -96,10 +98,10 @@
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="idtype" Type="Int32" Nullable="false" />
-          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Price" Type="Int32" />
-          <Property Name="About" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="price" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="about" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="image" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="merchandise_cart" Relationship="Self.FK_merchandise_cart_merchandise_table" FromRole="merchandise_table" ToRole="merchandise_cart" />
           <NavigationProperty Name="merchandise_types" Relationship="Self.FK_merchandise_table_merchandise_types" FromRole="merchandise_table" ToRole="merchandise_types" />
         </EntityType>
@@ -108,11 +110,13 @@
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="Binary" MaxLength="50" FixedLength="false" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="merchandise_table" Relationship="Self.FK_merchandise_table_merchandise_types" FromRole="merchandise_types" ToRole="merchandise_table" />
         </EntityType>
         <Association Name="FK_merchandise_cart_merchandise_table">
-          <End Role="merchandise_table" Type="Self.merchandise_table" Multiplicity="1" />
+          <End Role="merchandise_table" Type="Self.merchandise_table" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="merchandise_cart" Type="Self.merchandise_cart" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="merchandise_table">
@@ -137,7 +141,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="SGODBEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="sgosdbEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="merchandise_cart" EntityType="Self.merchandise_cart" />
           <EntitySet Name="merchandise_table" EntityType="Self.merchandise_table" />
           <EntitySet Name="merchandise_types" EntityType="Self.merchandise_types" />
@@ -155,9 +159,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="SGODBModelStoreContainer" CdmEntityContainer="SGODBEntities1">
+        <EntityContainerMapping StorageEntityContainer="sgosdbModelStoreContainer" CdmEntityContainer="sgosdbEntities">
           <EntitySetMapping Name="merchandise_cart">
-            <EntityTypeMapping TypeName="SGODBModel.merchandise_cart">
+            <EntityTypeMapping TypeName="sgosdbModel.merchandise_cart">
               <MappingFragment StoreEntitySet="merchandise-cart">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="customerid" ColumnName="customerid" />
@@ -169,22 +173,22 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="merchandise_table">
-            <EntityTypeMapping TypeName="SGODBModel.merchandise_table">
+            <EntityTypeMapping TypeName="sgosdbModel.merchandise_table">
               <MappingFragment StoreEntitySet="merchandise-table">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="idtype" ColumnName="idtype" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Price" ColumnName="Price" />
-                <ScalarProperty Name="About" ColumnName="About" />
-                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="price" ColumnName="price" />
+                <ScalarProperty Name="about" ColumnName="about" />
+                <ScalarProperty Name="image" ColumnName="image" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="merchandise_types">
-            <EntityTypeMapping TypeName="SGODBModel.merchandise_types">
+            <EntityTypeMapping TypeName="sgosdbModel.merchandise_types">
               <MappingFragment StoreEntitySet="merchandise-types">
                 <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="name" ColumnName="name" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
