@@ -110,7 +110,8 @@
     <Content Include="packages.config" />
     <Content Include="Pages\about.aspx" />
     <Content Include="Pages\Administration\admin.aspx" />
-    <Content Include="Pages\Administration\Database\database-merchandise-types.aspx" />
+    <Content Include="Pages\Administration\Database\database_merchandise_types.aspx" />
+    <Content Include="Pages\Administration\Database\database_mechandise_table.aspx" />
     <Content Include="Pages\contact.aspx" />
     <Content Include="Pages\default.aspx" />
     <Content Include="Pages\transcription.aspx" />
@@ -212,12 +213,19 @@
     <Compile Include="Pages\Administration\admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Administration\Database\database-merchandise-types.aspx.cs">
-      <DependentUpon>database-merchandise-types.aspx</DependentUpon>
+    <Compile Include="Pages\Administration\Database\database_merchandise_types.aspx.cs">
+      <DependentUpon>database_merchandise_types.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Administration\Database\database-merchandise-types.aspx.designer.cs">
-      <DependentUpon>database-merchandise-types.aspx</DependentUpon>
+    <Compile Include="Pages\Administration\Database\database_merchandise_types.aspx.designer.cs">
+      <DependentUpon>database_merchandise_types.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Administration\Database\database_mechandise_table.aspx.cs">
+      <DependentUpon>database_mechandise_table.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Administration\Database\database_mechandise_table.aspx.designer.cs">
+      <DependentUpon>database_mechandise_table.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\contact.aspx.cs">
       <DependentUpon>contact.aspx</DependentUpon>

@@ -52,12 +52,8 @@ body img						{		}
 
 
 
+
 /*  start contact */
-
-
-
-
-
 /*  start contactleftside */
 
 #contactcontent                 {   }
@@ -91,10 +87,33 @@ body img						{		}
 
 
 /*  stop contactrightside */
+/*  stop contact content*/
 
 
 
 
+
+/*  start database_merchandise_tabel content*/
+
+
+
+/*  start database_merchandise_tabel leftside*/
+
+#dbmertypescontentleftside      {   float:left; }
+
+
+/*  stop database_merchandise_tabel leftside*/
+
+
+
+/*  start database_merchandise_tabel rightside*/
+
+#dbmertypescontentrightside      {   float:right;   }
+
+/*  stop database_merchandise_tabel rightside*/
+
+
+/*  stop database_merchandise_tabel content*/
 /* end content */
 
 
@@ -111,8 +130,12 @@ body img						{		}
 #twitterlink 				    {	float:right; margin:0 10px 0 0; width:34px; height:34px; margin:0 10px 0 0px; color:#FFFFFF; margin:5px 5px 10px 0; text-align:right;} 			
 #bloggerlink 				    {	float:right; margin:0 10px 0 0; width:34px; height:34px; margin:0 10px 0 0px; color:#FFFFFF; margin:5px 5px 10px 0; text-align:right;} 			
 		
-
+#footerleftside li              {   }
 /* end footer */
+
+
+
+
 
 
 
