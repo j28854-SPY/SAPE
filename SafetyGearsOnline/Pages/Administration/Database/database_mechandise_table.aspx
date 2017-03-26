@@ -53,7 +53,7 @@
             <table id="dbmertablecontentable4">
                 <tr>
                     <td><asp:label runat="server" text="Image: -" ID="dbmertableimagelbllink"></asp:label></td>
-                    <td><asp:DropDownList ID="dbmertableimagedropdownlink" runat="server" OnSelectedIndexChanged="dbmertableimagedropdownlink_SelectedIndexChanged"></asp:DropDownList></td>
+                    <td><asp:DropDownList ID="dbmertableimagedropdownlink" runat="server"></asp:DropDownList></td>
                 </tr>
             </table>
 
