@@ -25,10 +25,10 @@ namespace SafetyGearsOnline.Pages.Administration.Database
 
         private merchandise_types upload_merchandise_types()
         {
-            merchandise_types p = new merchandise_types();
-            p.name = dbmertypesnametextboxlink.Text;
+            merchandise_types m = new merchandise_types();
+            m.name = dbmertypesnametextboxlink.Text;
 
-            return p;
+            return m;
 
 
         }

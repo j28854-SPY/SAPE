@@ -49,6 +49,15 @@ namespace SafetyGearsOnline.Pages.Administration.Database {
         protected global::System.Web.UI.WebControls.DropDownList dbmertabletypesdropdownlink;
         
         /// <summary>
+        /// SqlDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        
+        /// <summary>
         /// dbmertablepricelbllink control.
         /// </summary>
         /// <remarks>
@@ -101,5 +110,23 @@ namespace SafetyGearsOnline.Pages.Administration.Database {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox dbmertableabouttextboxlink;
+        
+        /// <summary>
+        /// upload_mer_table_button control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button upload_mer_table_button;
+        
+        /// <summary>
+        /// upload_mer_table_lbl_results control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label upload_mer_table_lbl_results;
     }
 }

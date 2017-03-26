@@ -2,11 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="bannerCPH" runat="server">
-</asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="contentwrapperCPH" runat="server">
 
-
-
+    <asp:Image ID="dbmertypescontentimage1" runat="server"/>
     <!--begin merchandise_types content-->
 
     <div id="dbmertypescontent">
@@ -53,4 +50,7 @@
 
     <!--end merchandise_types content-->
 
+
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="contentwrapperCPH" runat="server">
 </asp:Content>
