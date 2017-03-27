@@ -7,28 +7,23 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SafetyGearsOnline.Models
+namespace SafetyGearsOnline.Models.EntityFramework
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class merchandise_table
+    public partial class item_versions
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public merchandise_table()
+        public item_versions()
         {
-            this.merchandise_cart = new HashSet<merchandise_cart>();
+            this.item_table = new HashSet<item_table>();
         }
     
-        public int id { get; set; }
-        public int idtype { get; set; }
-        public string name { get; set; }
-        public Nullable<decimal> price { get; set; }
-        public string about { get; set; }
-        public string image { get; set; }
+        public string ItemName { get; set; }
+        public int Code { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<merchandise_cart> merchandise_cart { get; set; }
-        public virtual merchandise_types merchandise_types { get; set; }
+        public virtual ICollection<item_table> item_table { get; set; }
     }
 }

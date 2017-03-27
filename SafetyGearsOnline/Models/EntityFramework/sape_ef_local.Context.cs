@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SafetyGearsOnline.Models
+namespace SafetyGearsOnline.Models.EntityFramework
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class sgosdblocal : DbContext
+    public partial class SaPEEntitiesLocal : DbContext
     {
-        public sgosdblocal()
-            : base("name=sgosdblocal")
+        public SaPEEntitiesLocal()
+            : base("name=SaPEEntitiesLocal")
         {
         }
     
@@ -25,8 +25,8 @@ namespace SafetyGearsOnline.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<merchandise_cart> merchandise_cart { get; set; }
-        public virtual DbSet<merchandise_table> merchandise_table { get; set; }
-        public virtual DbSet<merchandise_types> merchandise_types { get; set; }
+        public virtual DbSet<item_pushcart> item_pushcart { get; set; }
+        public virtual DbSet<item_table> item_table { get; set; }
+        public virtual DbSet<item_versions> item_versions { get; set; }
     }
 }

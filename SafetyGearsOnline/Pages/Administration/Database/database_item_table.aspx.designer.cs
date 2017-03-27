@@ -10,88 +10,106 @@
 namespace SafetyGearsOnline.Pages.Administration.Database {
     
     
-    public partial class database_mechandise_table {
+    public partial class database_item_table {
         
         /// <summary>
-        /// dbmertablenamelbllink control.
+        /// dbitemversionsnamelbllink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label dbmertablenamelbllink;
+        protected global::System.Web.UI.WebControls.Label dbitemversionsnamelbllink;
         
         /// <summary>
-        /// dbmertablenametextboxlink control.
+        /// dbitemversionsnametextboxlink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox dbmertablenametextboxlink;
+        protected global::System.Web.UI.WebControls.TextBox dbitemversionsnametextboxlink;
         
         /// <summary>
-        /// dbmertabletypeslbllink control.
+        /// upload_item_versions_button_results control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label dbmertabletypeslbllink;
+        protected global::System.Web.UI.WebControls.Label upload_item_versions_button_results;
         
         /// <summary>
-        /// dbmertabletypesdropdownlink control.
+        /// dbitemtablenamelbllink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dbmertabletypesdropdownlink;
+        protected global::System.Web.UI.WebControls.Label dbitemtablenamelbllink;
         
         /// <summary>
-        /// SqlDataSource1 control.
+        /// dbitemtablenametextboxlink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.TextBox dbitemtablenametextboxlink;
         
         /// <summary>
-        /// dbmertablepricelbllink control.
+        /// dbitemtableversionslbllink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label dbmertablepricelbllink;
+        protected global::System.Web.UI.WebControls.Label dbitemtableversionslbllink;
         
         /// <summary>
-        /// dbmertablepricetextboxlink control.
+        /// dbitemtableversionsdropdownlink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox dbmertablepricetextboxlink;
+        protected global::System.Web.UI.WebControls.DropDownList dbitemtableversionsdropdownlink;
         
         /// <summary>
-        /// dbmertableimagelbllink control.
+        /// dbitemtablepricelbllink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label dbmertableimagelbllink;
+        protected global::System.Web.UI.WebControls.Label dbitemtablepricelbllink;
         
         /// <summary>
-        /// dbmertableimagedropdownlink control.
+        /// dbitemtablepricetextboxlink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dbmertableimagedropdownlink;
+        protected global::System.Web.UI.WebControls.TextBox dbitemtablepricetextboxlink;
+        
+        /// <summary>
+        /// dbitemtabledisplaylbllink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label dbitemtabledisplaylbllink;
+        
+        /// <summary>
+        /// dbitemtabledisplaydropdownlink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList dbitemtabledisplaydropdownlink;
         
         /// <summary>
         /// Label2 control.
@@ -103,30 +121,30 @@ namespace SafetyGearsOnline.Pages.Administration.Database {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// dbmertableabouttextboxlink control.
+        /// dbitemtabledetailstextboxlink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox dbmertableabouttextboxlink;
+        protected global::System.Web.UI.WebControls.TextBox dbitemtabledetailstextboxlink;
         
         /// <summary>
-        /// upload_mer_table_button control.
+        /// upload_item_table_button control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button upload_mer_table_button;
+        protected global::System.Web.UI.WebControls.Button upload_item_table_button;
         
         /// <summary>
-        /// upload_mer_table_lbl_results control.
+        /// upload_item_table_lbl_results control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label upload_mer_table_lbl_results;
+        protected global::System.Web.UI.WebControls.Label upload_item_table_lbl_results;
     }
 }

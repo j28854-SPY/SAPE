@@ -79,6 +79,7 @@
     <Content Include="Images\BGWrap.png" />
     <Content Include="Images\ccbg.jpg" />
     <Content Include="Images\ccbg1.jpg" />
+    <Content Include="Images\Database\googles_default.jpg" />
     <Content Include="Images\Database\head_gear_default.jpg" />
     <Content Include="Images\Footer.png" />
     <Content Include="Images\grey-white.jpg" />
@@ -88,50 +89,32 @@
     <Content Include="Images\index.jpg" />
     <Content Include="Images\Nav.png" />
     <Content Include="Images\safetygearbackground.jpg" />
-    <Content Include="Models\ef_sgosdblocal.Context.tt">
+    <Content Include="Models\EntityFramework\sape_ef_local.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ef_sgosdblocal.edmx</DependentUpon>
-      <LastGenOutput>ef_sgosdblocal.Context.cs</LastGenOutput>
+      <DependentUpon>sape_ef_local.edmx</DependentUpon>
+      <LastGenOutput>sape_ef_local.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\ef_sgosdblocal.tt">
+    <Content Include="Models\EntityFramework\sape_ef_local.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ef_sgosdblocal.edmx</DependentUpon>
-      <LastGenOutput>ef_sgosdblocal.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\ef_sgosdbremote.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ef_sgosdbremote.edmx</DependentUpon>
-      <LastGenOutput>ef_sgosdbremote.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\ef_sgosdbremote.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ef_sgosdbremote.edmx</DependentUpon>
-      <LastGenOutput>ef_sgosdbremote.cs</LastGenOutput>
+      <DependentUpon>sape_ef_local.edmx</DependentUpon>
+      <LastGenOutput>sape_ef_local.cs</LastGenOutput>
     </Content>
     <Content Include="packages.config" />
     <Content Include="Pages\about.aspx" />
     <Content Include="Pages\Administration\admin.aspx" />
-    <Content Include="Pages\Administration\Database\database_merchandise_types.aspx" />
-    <Content Include="Pages\Administration\Database\database_mechandise_table.aspx" />
+    <Content Include="Pages\Administration\Database\database_item_table.aspx" />
     <Content Include="Pages\contact.aspx" />
     <Content Include="Pages\default.aspx" />
     <Content Include="Pages\transcription.aspx" />
     <Content Include="Scripts\contactmap.js" />
     <Content Include="WebForm1.aspx" />
     <Content Include="Pages\MasterPage\template.Master" />
-    <EntityDeploy Include="Models\ef_sgosdblocal.edmx">
+    <EntityDeploy Include="Models\EntityFramework\sape_ef_local.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ef_sgosdblocal.Designer.cs</LastGenOutput>
+      <LastGenOutput>sape_ef_local.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\ef_sgosdblocal.edmx.diagram">
-      <DependentUpon>ef_sgosdblocal.edmx</DependentUpon>
-    </Content>
-    <EntityDeploy Include="Models\ef_sgosdbremote.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ef_sgosdbremote.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\ef_sgosdbremote.edmx.diagram">
-      <DependentUpon>ef_sgosdbremote.edmx</DependentUpon>
+    <Content Include="Models\EntityFramework\sape_ef_local.edmx.diagram">
+      <DependentUpon>sape_ef_local.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
@@ -152,54 +135,41 @@
     <Content Include="Images\6banner-safety-equipment.png" />
     <Content Include="Images\cwlh1.jpg" />
     <Content Include="StyleCSS\masterpagestyle.css" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ef_sgosdblocal.Context.cs">
+    <Compile Include="Models\EntityFramework\item_pushcart.cs">
+      <DependentUpon>sape_ef_local.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EntityFramework\item_table.cs">
+      <DependentUpon>sape_ef_local.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EntityFramework\item_versions.cs">
+      <DependentUpon>sape_ef_local.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EntityFramework\sape_ef_local.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ef_sgosdblocal.Context.tt</DependentUpon>
+      <DependentUpon>sape_ef_local.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ef_sgosdblocal.cs">
+    <Compile Include="Models\EntityFramework\sape_ef_local.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ef_sgosdblocal.tt</DependentUpon>
+      <DependentUpon>sape_ef_local.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ef_sgosdblocal.Designer.cs">
+    <Compile Include="Models\EntityFramework\sape_ef_local.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ef_sgosdblocal.edmx</DependentUpon>
+      <DependentUpon>sape_ef_local.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\ef_sgosdbremote.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ef_sgosdbremote.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ef_sgosdbremote.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ef_sgosdbremote.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ef_sgosdbremote.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ef_sgosdbremote.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\merchandise_cart.cs">
-      <DependentUpon>ef_sgosdbremote.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\merchandise_cart_model.cs" />
-    <Compile Include="Models\merchandise_table.cs">
-      <DependentUpon>ef_sgosdbremote.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\merchandise_table_model.cs" />
-    <Compile Include="Models\merchandise_types.cs">
-      <DependentUpon>ef_sgosdbremote.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\merchandise_types_model.cs" />
+    <Compile Include="Models\item_pushcart_model.cs" />
+    <Compile Include="Models\item_table_model.cs" />
+    <Compile Include="Models\item_versions_model.cs" />
     <Compile Include="Pages\about.aspx.cs">
       <DependentUpon>about.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -214,19 +184,12 @@
     <Compile Include="Pages\Administration\admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Administration\Database\database_merchandise_types.aspx.cs">
-      <DependentUpon>database_merchandise_types.aspx</DependentUpon>
+    <Compile Include="Pages\Administration\Database\database_item_table.aspx.cs">
+      <DependentUpon>database_item_table.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Administration\Database\database_merchandise_types.aspx.designer.cs">
-      <DependentUpon>database_merchandise_types.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Administration\Database\database_mechandise_table.aspx.cs">
-      <DependentUpon>database_mechandise_table.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Administration\Database\database_mechandise_table.aspx.designer.cs">
-      <DependentUpon>database_mechandise_table.aspx</DependentUpon>
+    <Compile Include="Pages\Administration\Database\database_item_table.aspx.designer.cs">
+      <DependentUpon>database_item_table.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\contact.aspx.cs">
       <DependentUpon>contact.aspx</DependentUpon>

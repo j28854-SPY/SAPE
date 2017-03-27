@@ -7,20 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SafetyGearsOnline.Models
+namespace SafetyGearsOnline.Models.EntityFramework
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class merchandise_cart
+    public partial class item_pushcart
     {
-        public int id { get; set; }
-        public string customerid { get; set; }
-        public int merchandiseid { get; set; }
-        public int amount { get; set; }
-        public Nullable<System.DateTime> datebuy { get; set; }
-        public bool incart { get; set; }
+        public string UserCode { get; set; }
+        public bool PushCart { get; set; }
+        public int ItemCode { get; set; }
+        public Nullable<System.DateTime> BuyDate { get; set; }
+        public int Total { get; set; }
+        public int Code { get; set; }
     
-        public virtual merchandise_table merchandise_table { get; set; }
+        public virtual item_table item_table { get; set; }
     }
 }
