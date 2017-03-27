@@ -13,5 +13,10 @@ namespace SafetyGearsOnline.Pages.Administration
         {
 
         }
+
+        protected void admin_gv_itemtable_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+
+        }
     }
 }

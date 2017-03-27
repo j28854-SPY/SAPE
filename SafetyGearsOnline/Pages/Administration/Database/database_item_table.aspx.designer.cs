@@ -76,6 +76,15 @@ namespace SafetyGearsOnline.Pages.Administration.Database {
         protected global::System.Web.UI.WebControls.DropDownList dbitemtableversionsdropdownlink;
         
         /// <summary>
+        /// SaPEDBVersionLocal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SaPEDBVersionLocal;
+        
+        /// <summary>
         /// dbitemtablepricelbllink control.
         /// </summary>
         /// <remarks>

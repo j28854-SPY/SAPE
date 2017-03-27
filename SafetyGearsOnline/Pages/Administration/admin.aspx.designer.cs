@@ -22,13 +22,13 @@ namespace SafetyGearsOnline.Pages.Administration {
         protected global::System.Web.UI.WebControls.Label admin_label;
         
         /// <summary>
-        /// admin_gv_mta control.
+        /// admin_gv_itemtable control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView admin_gv_mta;
+        protected global::System.Web.UI.WebControls.GridView admin_gv_itemtable;
         
         /// <summary>
         /// SaPEDBLocal control.
@@ -38,5 +38,41 @@ namespace SafetyGearsOnline.Pages.Administration {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SaPEDBLocal;
+        
+        /// <summary>
+        /// admin_gv_itemversions control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label admin_gv_itemversions;
+        
+        /// <summary>
+        /// GridView1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView1;
+        
+        /// <summary>
+        /// SaPEDBItemVersionLocal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SaPEDBItemVersionLocal;
+        
+        /// <summary>
+        /// upload_item_data_page control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton upload_item_data_page;
     }
 }

@@ -7,10 +7,12 @@
 
         <div id="admin_gridview1">
 
-            <asp:Label ID="admin_label" class="admin_label_class" runat="server" Text="Table of Item in Sql Express Database"></asp:Label>
+            <asp:Label ID="admin_label" class="admin_label_class" runat="server" Text="Table of Item in Sql Server Database"></asp:Label>
 
+            
+            <hr />
 
-            <asp:GridView ID="admin_gv_mta" class="admin_gv_mta_class" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Code" DataSourceID="SaPEDBLocal">
+            <asp:GridView ID="admin_gv_itemtable" class="admin_gv_mta_class" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Code" DataSourceID="SaPEDBLocal" OnRowEditing="admin_gv_itemtable_RowEditing">
                 <Columns>
                     <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                     <asp:BoundField DataField="ItemName" HeaderText="ItemName" SortExpression="ItemName" />
@@ -50,7 +52,41 @@
 
 
 
+        <div id="admin_gridview2">
 
+
+            <asp:Label ID="admin_gv_itemversions" class="admin_label_class" runat="server" Text="Table of Item Versions in Sql Server Database"></asp:Label>
+
+            <hr />
+
+            <asp:GridView ID="GridView1" class="admin_gv_mta_class" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Code" DataSourceID="SaPEDBItemVersionLocal">
+                <Columns>
+                    <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+                    <asp:BoundField DataField="ItemName" HeaderText="ItemName" SortExpression="ItemName" />
+                    <asp:BoundField DataField="Code" HeaderText="Code" InsertVisible="False" ReadOnly="True" SortExpression="Code" />
+                </Columns>
+            </asp:GridView>
+
+
+            <asp:SqlDataSource ID="SaPEDBItemVersionLocal" runat="server" ConnectionString="<%$ ConnectionStrings:SaPEConnectionString %>" DeleteCommand="DELETE FROM [item_versions] WHERE [Code] = @Code" InsertCommand="INSERT INTO [item_versions] ([ItemName]) VALUES (@ItemName)" SelectCommand="SELECT * FROM [item_versions] ORDER BY [ItemName]" UpdateCommand="UPDATE [item_versions] SET [ItemName] = @ItemName WHERE [Code] = @Code">
+                <DeleteParameters>
+                    <asp:Parameter Name="Code" Type="Int32" />
+                </DeleteParameters>
+                <InsertParameters>
+                    <asp:Parameter Name="ItemName" Type="String" />
+                </InsertParameters>
+                <UpdateParameters>
+                    <asp:Parameter Name="ItemName" Type="String" />
+                    <asp:Parameter Name="Code" Type="Int32" />
+                </UpdateParameters>
+            </asp:SqlDataSource>
+
+
+        </div>
+
+
+
+        <asp:LinkButton ID="upload_item_data_page" runat="server" PostBackUrl="~/Pages/Administration/Database/database_item_table.aspx">Upload Item Here :)</asp:LinkButton>
 
 
     </div>
