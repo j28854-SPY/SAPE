@@ -93,25 +93,25 @@ body img						{		}
 
 
 
-/*  start database_merchandise_table content*/
+/*  start database_item_table content*/
 
-#dbmertablescontentleftside     {   float:left; width:320px;  }
-#dbmertablecontent              {      }
-#dbmertablescontentrightside    {   float:left; width:320px;     }
+#dbitemtablescontentleftside     {   float:left; width:320px;  }
+#dbitemtablecontent              {   width:960px;   }
+#dbitemtablescontentrightside    {   float:left; width:320px;     }
 
 
 /*  stop database_merchandise_tabel content*/
 
 
+dbitemtablescontentleftside
 
+/*  start database_item_versions content*/
 
-/*  start database_merchandise_types content*/
+#dbitemtversionscontentleftside   {   float:left; width:320px;  }
+#dbitemversionscontent            {   float:left; width:320px;    }
+#dbitemversionscontentrightside   {      }
 
-#dbmertypescontentleftside      {   float:left; width:320px;  }
-#dbmertypescontent              {       }
-#dbmertypescontentrightside     {      }
-
-/*  stop database_merchandise_types content*/
+/*  stop database_item_versions content*/
 
 
 

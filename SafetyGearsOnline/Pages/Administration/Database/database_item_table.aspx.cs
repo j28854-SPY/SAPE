@@ -76,7 +76,7 @@ namespace SafetyGearsOnline.Pages.Administration.Database
 
         }
 
-        protected void upload_mer_types_button(object sender, EventArgs e)
+        protected void upload_item_versions_button(object sender, EventArgs e)
         {
             item_versions_model model = new item_versions_model();
             item_versions baru = upload_item_versions();
@@ -95,7 +95,6 @@ namespace SafetyGearsOnline.Pages.Administration.Database
 
         }
 
-
-
+        
     }
 }

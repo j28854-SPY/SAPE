@@ -31,12 +31,12 @@ namespace SafetyGearsOnline.Pages.Administration {
         protected global::System.Web.UI.WebControls.GridView admin_gv_mta;
         
         /// <summary>
-        /// SqlDataSource1 control.
+        /// SaPEDBLocal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.SqlDataSource SaPEDBLocal;
     }
 }

@@ -7,44 +7,45 @@
 
         <div id="admin_gridview1">
 
-            <asp:Label ID="admin_label" class="admin_label_class" runat="server" Text="Table of Mechandise in Sql Express Database"></asp:Label>
+            <asp:Label ID="admin_label" class="admin_label_class" runat="server" Text="Table of Item in Sql Express Database"></asp:Label>
 
 
-            <asp:GridView ID="admin_gv_mta" class="admin_gv_mta_class" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource1">
+            <asp:GridView ID="admin_gv_mta" class="admin_gv_mta_class" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Code" DataSourceID="SaPEDBLocal">
                 <Columns>
                     <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
-                    <asp:BoundField DataField="id" HeaderText="id" InsertVisible="False" ReadOnly="True" SortExpression="id" />
-                    <asp:BoundField DataField="idtype" HeaderText="idtype" SortExpression="idtype" />
-                    <asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
-                    <asp:BoundField DataField="price" HeaderText="price" SortExpression="price" />
-                    <asp:BoundField DataField="about" HeaderText="about" SortExpression="about" />
-                    <asp:BoundField DataField="image" HeaderText="image" SortExpression="image" />
+                    <asp:BoundField DataField="ItemName" HeaderText="ItemName" SortExpression="ItemName" />
+                    <asp:BoundField DataField="Versions" HeaderText="Versions" SortExpression="Versions" />
+                    <asp:BoundField DataField="ItemDetails" HeaderText="ItemDetails" SortExpression="ItemDetails" />
+                    <asp:BoundField DataField="ItemCostBND" HeaderText="ItemCostBND" SortExpression="ItemCostBND" />
+                    <asp:BoundField DataField="ItemDisplay" HeaderText="ItemDisplay" SortExpression="ItemDisplay" />
+                    <asp:BoundField DataField="Code" HeaderText="Code" SortExpression="Code" InsertVisible="False" ReadOnly="True" />
                 </Columns>
             </asp:GridView>
 
 
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:sgosdbConnectionString %>" DeleteCommand="DELETE FROM [merchandise_table] WHERE [id] = @id" InsertCommand="INSERT INTO [merchandise_table] ([idtype], [name], [price], [about], [image]) VALUES (@idtype, @name, @price, @about, @image)" SelectCommand="SELECT * FROM [merchandise_table]" UpdateCommand="UPDATE [merchandise_table] SET [idtype] = @idtype, [name] = @name, [price] = @price, [about] = @about, [image] = @image WHERE [id] = @id">
+            <asp:SqlDataSource ID="SaPEDBLocal" runat="server" ConnectionString="<%$ ConnectionStrings:SaPEConnectionString %>" DeleteCommand="DELETE FROM [item_table] WHERE [Code] = @Code" InsertCommand="INSERT INTO [item_table] ([ItemName], [Versions], [ItemDetails], [ItemCostBND], [ItemDisplay]) VALUES (@ItemName, @Versions, @ItemDetails, @ItemCostBND, @ItemDisplay)" SelectCommand="SELECT * FROM [item_table]" UpdateCommand="UPDATE [item_table] SET [ItemName] = @ItemName, [Versions] = @Versions, [ItemDetails] = @ItemDetails, [ItemCostBND] = @ItemCostBND, [ItemDisplay] = @ItemDisplay WHERE [Code] = @Code">
                 <DeleteParameters>
-                    <asp:Parameter Name="id" Type="Int32" />
+                    <asp:Parameter Name="Code" Type="Int32" />
                 </DeleteParameters>
                 <InsertParameters>
-                    <asp:Parameter Name="idtype" Type="Int32" />
-                    <asp:Parameter Name="name" Type="String" />
-                    <asp:Parameter Name="price" Type="Decimal" />
-                    <asp:Parameter Name="about" Type="String" />
-                    <asp:Parameter Name="image" Type="String" />
+                    <asp:Parameter Name="ItemName" Type="String" />
+                    <asp:Parameter Name="Versions" Type="Int32" />
+                    <asp:Parameter Name="ItemDetails" Type="String" />
+                    <asp:Parameter Name="ItemCostBND" Type="Decimal" />
+                    <asp:Parameter Name="ItemDisplay" Type="String" />
                 </InsertParameters>
                 <UpdateParameters>
-                    <asp:Parameter Name="idtype" Type="Int32" />
-                    <asp:Parameter Name="name" Type="String" />
-                    <asp:Parameter Name="price" Type="Decimal" />
-                    <asp:Parameter Name="about" Type="String" />
-                    <asp:Parameter Name="image" Type="String" />
-                    <asp:Parameter Name="id" Type="Int32" />
+                    <asp:Parameter Name="ItemName" Type="String" />
+                    <asp:Parameter Name="Versions" Type="Int32" />
+                    <asp:Parameter Name="ItemDetails" Type="String" />
+                    <asp:Parameter Name="ItemCostBND" Type="Decimal" />
+                    <asp:Parameter Name="ItemDisplay" Type="String" />
+                    <asp:Parameter Name="Code" Type="Int32" />
                 </UpdateParameters>
             </asp:SqlDataSource>
 
 
+            
         </div>
 
 
