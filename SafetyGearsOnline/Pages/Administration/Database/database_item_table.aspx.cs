@@ -72,7 +72,7 @@ namespace SafetyGearsOnline.Pages.Administration.Database
             item_table_model upload = new item_table_model();
             item_table merchandise = upload_item_table();
 
-            upload_item_table_lbl_results.Text = upload.AddMerchandise(merchandise);
+            upload_item_table_lbl_results.Text = upload.add_item(merchandise);
 
         }
 
@@ -81,7 +81,7 @@ namespace SafetyGearsOnline.Pages.Administration.Database
             item_versions_model model = new item_versions_model();
             item_versions baru = upload_item_versions();
 
-            upload_item_versions_button_results.Text = model.AddMerchandise(baru);
+            upload_item_versions_button_results.Text = model.add_item(baru);
         }
 
 
@@ -90,7 +90,7 @@ namespace SafetyGearsOnline.Pages.Administration.Database
             item_versions i = new item_versions();
             i.ItemName = dbitemversionsnametextboxlink.Text;
 
-            return m;
+            return i;
 
 
         }
