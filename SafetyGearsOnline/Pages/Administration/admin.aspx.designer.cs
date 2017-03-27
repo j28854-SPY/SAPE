@@ -13,13 +13,13 @@ namespace SafetyGearsOnline.Pages.Administration {
     public partial class admin {
         
         /// <summary>
-        /// admin_label control.
+        /// admin_lbl_itemtable control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label admin_label;
+        protected global::System.Web.UI.WebControls.Label admin_lbl_itemtable;
         
         /// <summary>
         /// admin_gv_itemtable control.
@@ -40,13 +40,13 @@ namespace SafetyGearsOnline.Pages.Administration {
         protected global::System.Web.UI.WebControls.SqlDataSource SaPEDBLocal;
         
         /// <summary>
-        /// admin_gv_itemversions control.
+        /// admin_lbl_itemversions control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label admin_gv_itemversions;
+        protected global::System.Web.UI.WebControls.Label admin_lbl_itemversions;
         
         /// <summary>
         /// GridView1 control.

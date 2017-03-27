@@ -74,6 +74,14 @@ namespace SafetyGearsOnline.Pages.Administration.Database
 
             upload_item_table_lbl_results.Text = upload.add_item(merchandise);
 
+
+            System.Threading.Thread.Sleep(3000);
+
+            Response.Redirect("~/Pages/Administration/admin.aspx");
+            
+
+           
+
         }
 
         protected void upload_item_versions_button(object sender, EventArgs e)
@@ -82,6 +90,14 @@ namespace SafetyGearsOnline.Pages.Administration.Database
             item_versions baru = upload_item_versions();
 
             upload_item_versions_button_results.Text = model.add_item(baru);
+
+            System.Threading.Thread.Sleep(3000);
+
+            Response.Redirect("~/Pages/Administration/admin.aspx");
+
+
+
+
         }
 
 

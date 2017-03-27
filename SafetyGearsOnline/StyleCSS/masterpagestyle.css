@@ -118,7 +118,7 @@ dbitemtablescontentleftside
 /*  start admin_database content*/
 
 .admin_gv_mta_class             {   width:960px;  }
-.admin_label_class              {   font-size:50px;  }
+.admin_label_class              {   font-size:30px; text-align:center; font-family:Constantia; font-style:italic; width:100%; }
 
 
 /*  stop admin_database content*/

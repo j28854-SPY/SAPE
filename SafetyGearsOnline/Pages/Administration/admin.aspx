@@ -7,7 +7,7 @@
 
         <div id="admin_gridview1">
 
-            <asp:Label ID="admin_label" class="admin_label_class" runat="server" Text="Table of Item in Sql Server Database"></asp:Label>
+            <asp:Label ID="admin_lbl_itemtable" class="admin_label_class" runat="server" Text="Table of Item in Sql Server Database" Width="100%"></asp:Label>
 
             
             <hr />
@@ -55,7 +55,7 @@
         <div id="admin_gridview2">
 
 
-            <asp:Label ID="admin_gv_itemversions" class="admin_label_class" runat="server" Text="Table of Item Versions in Sql Server Database"></asp:Label>
+            <asp:Label ID="admin_lbl_itemversions" runat="server" Text="Table of Item Versions in Sql Server Database" CssClass="admin_label_class" Width="100%"></asp:Label>
 
             <hr />
 
