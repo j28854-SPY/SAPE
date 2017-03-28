@@ -86,7 +86,8 @@
 
 
 
-        <asp:LinkButton ID="upload_item_data_page" runat="server" PostBackUrl="~/Pages/Administration/Database/database_item_table.aspx">Upload Item Here :)</asp:LinkButton>
+        <asp:LinkButton ID="upload_item_data_page" runat="server" PostBackUrl="~/Pages/Administration/Database/database_item_table.aspx" Width="163px">
+            <asp:Image ID="upload_item_data_page_image" runat="server" ImageUrl="~/Images/icon/uploadbutton_1.jpg"  CssClass="upload_item_data_page_image" /></asp:LinkButton>
 
 
     </div>

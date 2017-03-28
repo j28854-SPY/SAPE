@@ -74,5 +74,14 @@ namespace SafetyGearsOnline.Pages.Administration {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton upload_item_data_page;
+        
+        /// <summary>
+        /// upload_item_data_page_image control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image upload_item_data_page_image;
     }
 }

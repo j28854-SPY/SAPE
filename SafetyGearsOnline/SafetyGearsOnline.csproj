@@ -86,6 +86,7 @@
     <Content Include="Images\icon\blog.png" />
     <Content Include="Images\icon\facebook-icon.png" />
     <Content Include="Images\icon\twitter-icon.png" />
+    <Content Include="Images\icon\uploadbutton_1.jpg" />
     <Content Include="Images\index.jpg" />
     <Content Include="Images\Nav.png" />
     <Content Include="Images\safetygearbackground.jpg" />
