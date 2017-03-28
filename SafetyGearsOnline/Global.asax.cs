@@ -13,6 +13,7 @@ namespace SafetyGearsOnline
         protected void Application_Start(object sender, EventArgs e)
         {
 
+            /*  Begin implementation of J querry for both maps and contact page   */
             string JQueryVer = "3.1.1";
             ScriptManager.ScriptResourceMapping.AddDefinition("jquery", new ScriptResourceDefinition
             {
@@ -23,9 +24,7 @@ namespace SafetyGearsOnline
                 CdnSupportsSecureConnection = true,
                 LoadSuccessExpression = "window.jQuery"
             });
-
-
-
+            /*  End implementation of J querry for both maps and contact page   */
 
         }
     }
