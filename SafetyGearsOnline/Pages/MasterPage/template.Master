@@ -8,19 +8,18 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
+    <meta name="viewport" content="initial-scale=1.0"/>
+
     <link rel="stylesheet" type="text/css" media="screen" href="../../StyleCSS/masterpagestyle.css" />
     <link rel="shortcut icon" type="image/tab-icon" href="../../Images/safetygearbackground.jpg" />
 
-    <meta name="viewport" content="initial-scale=1.0">
+    
 
     <script type="text/javascript" src="../../Scripts/contactmap.js"></script>
 
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJHM3DIGFZwsTyeDUM3rLogk9ewg2Q04I&callback=initMap"
-    async="async" defer="defer">
-
-    </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJHM3DIGFZwsTyeDUM3rLogk9ewg2Q04I&callback=initMap" async="async" defer="defer"></script>
 
 
 </head>
@@ -41,7 +40,7 @@
 		
 		<div id="topnav">
 			<ul>
-				<li><asp:HyperLink ID="homelink" runat="server" NavigateUrl="~/Pages/default.aspx">Home</asp:HyperLink></li>
+				<li><asp:HyperLink ID="homelink" runat="server" NavigateUrl>Home</asp:HyperLink></li>
                 <li><asp:HyperLink ID="aboutlink" runat="server" NavigateUrl="~/Pages/about.aspx">About</asp:HyperLink></li>
                 <li><asp:HyperLink ID="transcriptionlink" runat="server" NavigateUrl="~/Pages/transcription.aspx">Transcription</asp:HyperLink></li>
                 <li><asp:HyperLink ID="contactlink" runat="server" NavigateUrl="~/Pages/contact.aspx">Contact</asp:HyperLink></li>			

@@ -27,7 +27,7 @@ namespace SafetyGearsOnline.Pages
 
             smtpUser.Credentials = credentials;
 
-            MailMessage msg = new MailMessage("Safety & Protective Equipment", contactemailtextboxlink.Text);
+            MailMessage msg = new MailMessage("testlcbcompsci@gmail.com", contactemailtextboxlink.Text);
             msg.Subject = "Name: " + contactnametextboxlink.Text + " Subject: " + contactsubjecttextboxlink.Text;
             msg.Body = contactmessagetextboxlink.Text;
             
