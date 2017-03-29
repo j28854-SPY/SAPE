@@ -96,6 +96,8 @@ body img						{		}
 
 /*  start database_item_table content*/
 
+#dbitemtablecontent              {  display:inline; }      
+
 #dbitemtablescontentleftside     {   float:left; width:320px;  }
 #dbitemtablecontent              {   width:960px;   }
 #dbitemtablescontentrightside    {   float:left; width:320px;     }
@@ -120,6 +122,8 @@ body img						{		}
 
 .admin_gv_mta_class             {   width:960px;  }
 .admin_label_class              {   font-size:30px; text-align:center; font-family:Constantia; font-style:italic; width:100%; }
+.admin_label_class1             {   font-size:30px; text-align:center; font-family:Constantia; font-style:italic; width:100%; }
+
 
 #upload_item_data_page_image    {     }
 

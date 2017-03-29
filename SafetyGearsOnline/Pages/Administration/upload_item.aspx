@@ -4,6 +4,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="bannerCPH" runat="server">
 
 
+    
+
     <!--begin container wrapper for add merchandise_table-->
 
     <div id="dbitemtablecontent">
@@ -162,8 +164,6 @@
     </div>
 
     <!--end container wrapper for add item_table-->
-
-
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="contentwrapperCPH" runat="server">
 </asp:Content>

@@ -11,7 +11,7 @@ namespace SafetyGearsOnline
 {
 
 
-    public partial class transcription
+    public partial class transcription1
     {
     }
 }

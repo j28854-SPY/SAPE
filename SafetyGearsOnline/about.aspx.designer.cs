@@ -11,7 +11,7 @@ namespace SafetyGearsOnline
 {
 
 
-    public partial class about
+    public partial class about1
     {
     }
 }

@@ -3,10 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="bannerCPH" runat="server">
 
-    
-
-
-<div id="admincontent">
+ <div id="admincontent">
 
         <div id="admin_gridview1">
 
@@ -15,7 +12,7 @@
             
             <hr />
 
-            <asp:GridView ID="admin_gv_itemtable" class="admin_gv_mta_class" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Code" DataSourceID="SaPEDBLocal">
+            <asp:GridView ID="admin_gv_itemtable" class="admin_gv_mta_class" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Code" DataSourceID="SaPEDBLocal" OnRowEditing="admin_gv_itemtable_RowEditing">
                 <Columns>
                     <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                     <asp:BoundField DataField="ItemName" HeaderText="ItemName" SortExpression="ItemName" />
@@ -89,11 +86,10 @@
 
 
 
-        <asp:LinkButton ID="upload_item_data_page" runat="server" PostBackUrl="~/Pages/Administration/Database/database_item_table.aspx" Width="163px">
-            <asp:Image ID="upload_item_data_page_image" runat="server" ImageUrl="~/Images/icon/uploadbutton_1.jpg"  CssClass="upload_item_data_page_image" /></asp:LinkButton>
+        <asp:LinkButton ID="upload_item_data_page" runat="server" PostBackUrl="~/Pages/Administration/Database/database_item_table.aspx" Width="163px"> <asp:Image ID="upload_item_data_page_image" runat="server" ImageUrl="~/Images/icon/uploadbutton_1.jpg"  CssClass="upload_item_data_page_image" /></asp:LinkButton>
 
 
-    </div>
+</div>
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="contentwrapperCPH" runat="server">

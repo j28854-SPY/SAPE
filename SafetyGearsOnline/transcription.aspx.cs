@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace SafetyGearsOnline
 {
-    public partial class transcription : System.Web.UI.Page
+    public partial class transcription1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
