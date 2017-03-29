@@ -10,7 +10,7 @@
 namespace SafetyGearsOnline.Pages.Administration.Database {
     
     
-    public partial class database_item_table {
+    public partial class upload_item {
         
         /// <summary>
         /// dbitemversionsnamelbllink control.

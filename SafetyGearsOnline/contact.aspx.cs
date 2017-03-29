@@ -6,14 +6,15 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace SafetyGearsOnline.Pages
+namespace SafetyGearsOnline
 {
-    public partial class contact1 : System.Web.UI.Page
+    public partial class contact : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
+
 
         protected void contactsendlink_Click(object sender, EventArgs e)
         {
@@ -30,7 +31,7 @@ namespace SafetyGearsOnline.Pages
             MailMessage msg = new MailMessage("testlcbcompsci@gmail.com", contactemailtextboxlink.Text);
             msg.Subject = "Name: " + contactnametextboxlink.Text + " Subject: " + contactsubjecttextboxlink.Text;
             msg.Body = contactmessagetextboxlink.Text;
-            
+
 
 
             try
@@ -53,5 +54,6 @@ namespace SafetyGearsOnline.Pages
 
 
         }
+
     }
 }

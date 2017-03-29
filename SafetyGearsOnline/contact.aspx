@@ -1,8 +1,7 @@
-﻿<%@ Page Title="Contact | Safety & Protective Equipment" Language="C#" MasterPageFile="~/Pages/MasterPage/template.Master" AutoEventWireup="true" CodeBehind="contact.aspx.cs" Inherits="SafetyGearsOnline.Pages.contact1" %>
-<asp:Content ID="contacttheadCPH" ContentPlaceHolderID="head" runat="server">
+﻿<%@ Page Title="Contact | Safety & Protective Equipment" Language="C#" MasterPageFile="~/Pages/MasterPage/htmlpage.Master" AutoEventWireup="true" CodeBehind="contact.aspx.cs" Inherits="SafetyGearsOnline.contact" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
-<asp:Content ID="contactbannerCPH" ContentPlaceHolderID="bannerCPH" runat="server">
-
+<asp:Content ID="Content2" ContentPlaceHolderID="bannerCPH" runat="server">
 
     <!--begin wrapper container-->
 
@@ -92,6 +91,7 @@
 
     <!--end wrapper container-->
 
+
 </asp:Content>
-<asp:Content ID="contactwrapperCPH" ContentPlaceHolderID="contentwrapperCPH" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="contentwrapperCPH" runat="server">
 </asp:Content>

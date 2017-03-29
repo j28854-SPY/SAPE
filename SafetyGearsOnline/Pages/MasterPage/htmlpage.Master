@@ -1,15 +1,15 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="SafetyGearsOnline.Pages.MasterPage.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="htmlpage.master.cs" Inherits="SafetyGearsOnline.Pages.MasterPage.htmlpage" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>TemplateMasterpage | Safety & Protective Equipment</title>
+    <title>HTML Validation | Safety & Protective Equipment</title>
     
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <meta name="description" content="Safety & Protective Equipment Homepage, About, Transcription, Contact">
-    <meta name="keywords" content="Safety,Protective,Equipment,SAPE,Protection,Item, Name, Code">
-    <meta name="author" content="Awangku Syu'aib bin Pengiran Yahya">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <meta name="description" content="Safety & Protective Equipment Homepage, About, Transcription, Contact"/>
+    <meta name="keywords" content="Safety,Protective,Equipment,SAPE,Protection,Item, Name, Code"/>
+    <meta name="author" content="Awangku Syu'aib bin Pengiran Yahya"/>
     <meta name="viewport" content="initial-scale=1.0" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="../../StyleCSS/masterpagestyle.css" />
@@ -22,12 +22,13 @@
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJHM3DIGFZwsTyeDUM3rLogk9ewg2Q04I&callback=initMap" async="async" defer="defer"></script>
-
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
 
 </head>
 
 <body>
-
+    
+    <form runat="server">
         <div id="wrapper">
 
             <div id="top">
@@ -41,10 +42,10 @@
 
             <div id="topnav">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Transcription</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="../../default.aspx">Home</a></li>
+                    <li><a href="../../about.aspx">About</a></li>
+                    <li><a href="../../transcription.aspx">Transcription</a></li>
+                    <li><a href="../../contact.aspx">Contact</a></li>
                 </ul>
             </div>
 
@@ -52,7 +53,11 @@
 
             <div id="banner">
 
+                <asp:ContentPlaceHolder ID="bannerCPH" runat="server">
 
+
+
+                </asp:ContentPlaceHolder>
 
 
 
@@ -67,8 +72,13 @@
             <!-- End Sub Banner Quotes -->
             <div id="content">
 
+                <asp:ContentPlaceHolder ID="contentwrapperCPH" runat="server">
+
+
+
                 
-                
+
+                </asp:ContentPlaceHolder>    
 
             </div>
 
@@ -94,7 +104,7 @@
                     <ul>
                         
                         <li>&copy;Copyright 2017</li>
-                        <li><a href="">&copy;Safety & Protective Equipment Admin</a></li>
+                        <li><a href="../Administration/admin.aspx">&copy;Safety & Protective Equipment Admin</a></li>
                         
                     </ul>
 
@@ -117,5 +127,6 @@
 
         </div>
 
+    </form>
 </body>
 </html>

@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SafetyGearsOnline.Pages {
+namespace SafetyGearsOnline {
     
     
-    public partial class contact1 {
+    public partial class contact {
         
         /// <summary>
         /// contactnamelbllink control.

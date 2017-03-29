@@ -11,7 +11,7 @@ using SafetyGearsOnline.Models.EntityFramework;
 
 namespace SafetyGearsOnline.Pages.Administration.Database
 {
-    public partial class database_item_table : System.Web.UI.Page
+    public partial class upload_item : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -26,7 +26,7 @@ namespace SafetyGearsOnline.Pages.Administration.Database
         {
             item_table itemtable = new item_table();
 
-            
+
             itemtable.ItemName = dbitemtablenametextboxlink.Text;
             itemtable.Versions = Convert.ToInt32(dbitemtableversionsdropdownlink.SelectedValue);
             itemtable.ItemDetails = dbitemtabledetailstextboxlink.Text;
@@ -78,9 +78,9 @@ namespace SafetyGearsOnline.Pages.Administration.Database
             System.Threading.Thread.Sleep(3000);
 
             Response.Redirect("~/Pages/Administration/admin.aspx");
-            
 
-           
+
+
 
         }
 
@@ -110,7 +110,5 @@ namespace SafetyGearsOnline.Pages.Administration.Database
 
 
         }
-
-        
     }
 }
