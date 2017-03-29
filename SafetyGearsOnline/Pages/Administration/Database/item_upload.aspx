@@ -1,10 +1,7 @@
-﻿<%@ Page Title="Upload Items | Safety & Protective Equipment" Language="C#" MasterPageFile="~/Pages/MasterPage/htmlpage.Master" AutoEventWireup="true" CodeBehind="upload_item.aspx.cs" Inherits="SafetyGearsOnline.Pages.Administration.Database.upload_item" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Pages/MasterPage/html_page.Master" AutoEventWireup="true" CodeBehind="item_upload.aspx.cs" Inherits="SafetyGearsOnline.Pages.Administration.Database.item_upload" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="bannerCPH" runat="server">
-
-
-    
+<asp:Content ID="Content2" ContentPlaceHolderID="banner_cph" runat="server">
 
     <!--begin container wrapper for add merchandise_table-->
 
@@ -78,19 +75,8 @@
             <table id="dbitemtablecontentable2">
                 <tr>
                     <td><asp:label runat="server" text="Versions: -" ID="dbitemtableversionslbllink"></asp:label></td>
-                    <td><asp:DropDownList ID="dbitemtableversionsdropdownlink" runat="server" DataSourceID="SaPEDBVersionLocal" DataTextField="ItemName" DataValueField="Code"></asp:DropDownList>
-                        <asp:SqlDataSource ID="SaPEDBVersionLocal" runat="server" ConnectionString="<%$ ConnectionStrings:SaPEConnectionString %>" DeleteCommand="DELETE FROM [item_versions] WHERE [Code] = @Code" InsertCommand="INSERT INTO [item_versions] ([ItemName]) VALUES (@ItemName)" SelectCommand="SELECT * FROM [item_versions] ORDER BY [ItemName]" UpdateCommand="UPDATE [item_versions] SET [ItemName] = @ItemName WHERE [Code] = @Code">
-                            <DeleteParameters>
-                                <asp:Parameter Name="Code" Type="Int32" />
-                            </DeleteParameters>
-                            <InsertParameters>
-                                <asp:Parameter Name="ItemName" Type="String" />
-                            </InsertParameters>
-                            <UpdateParameters>
-                                <asp:Parameter Name="ItemName" Type="String" />
-                                <asp:Parameter Name="Code" Type="Int32" />
-                            </UpdateParameters>
-                        </asp:SqlDataSource>
+                    <td><asp:DropDownList ID="dbitemtableversionsdropdownlink" runat="server" AutoPostBack="True" DataSourceID="upload_item_page" DataTextField="ItemName" DataValueField="Code"></asp:DropDownList>
+                        <asp:SqlDataSource ID="upload_item_page" runat="server" ConnectionString="<%$ ConnectionStrings:SaPEConnectionString %>" SelectCommand="SELECT * FROM [item_versions] ORDER BY [ItemName]"></asp:SqlDataSource>
                     </td>
                 </tr>
             </table>
@@ -163,7 +149,6 @@
 
     </div>
 
-    <!--end container wrapper for add item_table-->
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="contentwrapperCPH" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="content_cph" runat="server">
 </asp:Content>

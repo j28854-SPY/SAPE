@@ -10,7 +10,7 @@
 namespace SafetyGearsOnline.Pages.Administration.Database {
     
     
-    public partial class upload_item {
+    public partial class item_upload {
         
         /// <summary>
         /// dbitemversionsnamelbllink control.
@@ -76,13 +76,13 @@ namespace SafetyGearsOnline.Pages.Administration.Database {
         protected global::System.Web.UI.WebControls.DropDownList dbitemtableversionsdropdownlink;
         
         /// <summary>
-        /// SaPEDBVersionLocal control.
+        /// upload_item_page control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SaPEDBVersionLocal;
+        protected global::System.Web.UI.WebControls.SqlDataSource upload_item_page;
         
         /// <summary>
         /// dbitemtablepricelbllink control.

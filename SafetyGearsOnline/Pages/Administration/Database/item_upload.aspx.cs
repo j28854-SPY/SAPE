@@ -11,16 +11,13 @@ using SafetyGearsOnline.Models.EntityFramework;
 
 namespace SafetyGearsOnline.Pages.Administration.Database
 {
-    public partial class upload_item : System.Web.UI.Page
+    public partial class item_upload : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
                 retrieve_preview();
-
-
         }
-
 
         private item_table upload_item_table()
         {
@@ -70,14 +67,14 @@ namespace SafetyGearsOnline.Pages.Administration.Database
         protected void upload_item_table_button_Click(object sender, EventArgs e)
         {
             item_table_model upload = new item_table_model();
-            item_table merchandise = upload_item_table();
+            item_table item = upload_item_table();
 
-            upload_item_table_lbl_results.Text = upload.add_item(merchandise);
+            upload_item_table_lbl_results.Text = upload.add_item(item);
 
 
             System.Threading.Thread.Sleep(3000);
 
-            Response.Redirect("~/Pages/Administration/admin.aspx");
+            Response.Redirect("~/Pages/Administration/administer.aspx");
 
 
 
@@ -93,7 +90,7 @@ namespace SafetyGearsOnline.Pages.Administration.Database
 
             System.Threading.Thread.Sleep(3000);
 
-            Response.Redirect("~/Pages/Administration/admin.aspx");
+            Response.Redirect("~/Pages/Administration/administer.aspx");
 
 
 
@@ -110,5 +107,6 @@ namespace SafetyGearsOnline.Pages.Administration.Database
 
 
         }
+
     }
 }

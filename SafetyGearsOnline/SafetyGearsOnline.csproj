@@ -105,9 +105,8 @@
       <LastGenOutput>sape_ef_local.cs</LastGenOutput>
     </Content>
     <Content Include="packages.config" />
-    <Content Include="Pages\admin.aspx" />
     <Content Include="Pages\Administration\administer.aspx" />
-    <Content Include="Pages\Administration\upload_item.aspx" />
+    <Content Include="Pages\Administration\Database\item_upload.aspx" />
     <Content Include="Scripts\contactmap.js" />
     <EntityDeploy Include="Models\EntityFramework\sape_ef_local.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -193,13 +192,6 @@
     <Compile Include="Models\item_pushcart_model.cs" />
     <Compile Include="Models\item_table_model.cs" />
     <Compile Include="Models\item_versions_model.cs" />
-    <Compile Include="Pages\admin.aspx.cs">
-      <DependentUpon>admin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\admin.aspx.designer.cs">
-      <DependentUpon>admin.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Pages\Administration\administer.aspx.cs">
       <DependentUpon>administer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -207,12 +199,12 @@
     <Compile Include="Pages\Administration\administer.aspx.designer.cs">
       <DependentUpon>administer.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Administration\upload_item.aspx.cs">
-      <DependentUpon>upload_item.aspx</DependentUpon>
+    <Compile Include="Pages\Administration\Database\item_upload.aspx.cs">
+      <DependentUpon>item_upload.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Administration\upload_item.aspx.designer.cs">
-      <DependentUpon>upload_item.aspx</DependentUpon>
+    <Compile Include="Pages\Administration\Database\item_upload.aspx.designer.cs">
+      <DependentUpon>item_upload.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\MasterPage\html_page.Master.cs">
       <DependentUpon>html_page.Master</DependentUpon>
@@ -232,7 +224,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Pages\Administration\Database\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
