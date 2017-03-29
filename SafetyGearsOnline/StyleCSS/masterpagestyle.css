@@ -137,11 +137,18 @@ body img						{		}
 #footer 						{  	background-image:url('../Images/BGWrap.png'); clear:both	 }
 
 
-#footerrightside li             {   display:inline; }      
+#footermiddleside               {   width:230px; float:left;    }
+#footermiddleside p             {   text-align:left;     }
+
+#footerrightside                {   float:right; margin:0 10px 0 0;  color:#FFFFFF; margin:5px 5px 10px 0; width:230px;   }
+#footerrightside li             {   display:inline; } 
+#footerrightside img            {   float:right; width:34px; height:34px; margin:0 10px 0 0px; text-align:left; }      
+    
 #facebooklink 				    {	float:right; margin:0 10px 0 0; width:34px; height:34px; margin:0 10px 0 0px; color:#FFFFFF; margin:5px 5px 10px 0; text-align:right;} 	
 #twitterlink 				    {	float:right; margin:0 10px 0 0; width:34px; height:34px; margin:0 10px 0 0px; color:#FFFFFF; margin:5px 5px 10px 0; text-align:right;} 			
 #bloggerlink 				    {	float:right; margin:0 10px 0 0; width:34px; height:34px; margin:0 10px 0 0px; color:#FFFFFF; margin:5px 5px 10px 0; text-align:right;} 			
-		
+
+#footerleftside	                {   width:230px; float:left;  }	
 #footerleftside li              {   }
 /* end footer */
 

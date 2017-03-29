@@ -76,6 +76,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HTMLTemplate.html" />
     <Content Include="Images\BGWrap.png" />
     <Content Include="Images\ccbg.jpg" />
     <Content Include="Images\ccbg1.jpg" />
