@@ -9,6 +9,13 @@
     </asp:ContentPlaceHolder>
 
 
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="Safety & Protective Equipment Homepage, About, Transcription, Contact"/>
+    <meta name="keywords" content="Safety,Protective,Equipment,SAPE,Protection,Item, Name, Code"/>
+    <meta name="author" content="Awangku Syu'aib bin Pengiran Yahya"/>
+    <meta name="viewport" content="initial-scale=1.0" />
+
+   
     <link rel="stylesheet" type="text/css" media="screen" href="../../StyleCSS/masterpagestyle.css" />
     <link rel="shortcut icon" type="image/tab-icon" href="../../Images/safetygearbackground.jpg" />
 
@@ -38,10 +45,10 @@
 
             <div id="topnav">
                 <ul>
-                    <li><a href="../../default.aspx">Home</a></li>
-                    <li><a href="../../about.aspx">About</a></li>
-                    <li><a href="../../transcription.aspx">Transcription</a></li>
-                    <li><a href="../../contact.aspx">Contact</a></li>
+                    <li><a href="/default.aspx">Home</a></li>
+                    <li><a href="/about.aspx">About</a></li>
+                    <li><a href="/transcription.aspx">Transcription</a></li>
+                    <li><a href="/contact.aspx">Contact</a></li>
                 </ul>
             </div>
 
@@ -92,7 +99,7 @@
                     <ul>
                         
                         <li>&copy;Copyright 2017</li>
-                        <li><a href="../Administration/administer.aspx">&copy;Safety & Protective Equipment Admin</a></li>
+                        <li><a href="/Pages/Administration/administer.aspx">&copy;Safety & Protective Equipment Admin</a></li>
                         
                     </ul>
 
@@ -102,9 +109,9 @@
                 <div id="footerrightside">
 
                     <ul>
-                        <li><a href="http://www.facebook.com/"><img src="Images/icon/facebook-icon.png" alt="facebook-icon.png"></a></li>
-                        <li><a href="https://twitter.com/"><img src="Images/icon/twitter-icon.png" alt="twitter-icon.png"></a></li>
-                        <li><a href="http://www.blogger.com"><img src="Images/icon/blog.png" alt="blog.png"></a></li>
+                        <li><a href="http://www.facebook.com/"><img src="/Images/icon/facebook-icon.png" alt="facebook"></a></li>
+                        <li><a href="https://twitter.com/"><img src="/Images/icon/twitter-icon.png" alt="twitter"></a></li>
+                        <li><a href="http://www.blogger.com"><img src="/Images/icon/blog.png" alt="blog"></a></li>
                     </ul>
 
                 </div>

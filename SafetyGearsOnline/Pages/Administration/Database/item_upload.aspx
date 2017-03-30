@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Pages/MasterPage/html_page.Master" AutoEventWireup="true" CodeBehind="item_upload.aspx.cs" Inherits="SafetyGearsOnline.Pages.Administration.Database.item_upload" %>
+﻿<%@ Page Title="Upload | Safety & Protective Equipment" Language="C#" MasterPageFile="~/Pages/MasterPage/html_page.Master" AutoEventWireup="true" CodeBehind="item_upload.aspx.cs" Inherits="SafetyGearsOnline.Pages.Administration.Database.item_upload" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="banner_cph" runat="server">
@@ -75,7 +75,7 @@
             <table id="dbitemtablecontentable2">
                 <tr>
                     <td><asp:label runat="server" text="Versions: -" ID="dbitemtableversionslbllink"></asp:label></td>
-                    <td><asp:DropDownList ID="dbitemtableversionsdropdownlink" runat="server" AutoPostBack="True" DataSourceID="upload_item_page" DataTextField="ItemName" DataValueField="Code"></asp:DropDownList>
+                    <td><asp:DropDownList ID="dbitemtableversionsdropdownlink" runat="server" DataSourceID="upload_item_page" DataTextField="ItemName" DataValueField="Code"></asp:DropDownList>
                         <asp:SqlDataSource ID="upload_item_page" runat="server" ConnectionString="<%$ ConnectionStrings:SaPEConnectionString %>" SelectCommand="SELECT * FROM [item_versions] ORDER BY [ItemName]"></asp:SqlDataSource>
                     </td>
                 </tr>
