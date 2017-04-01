@@ -4,6 +4,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="banner_cph" runat="server">
 
 
+    
+
+
+
+
+
+
     <!-- header template, table cell padding 2, cell spacing 2 border 1 , tr then th variables (name)of itemtable -->
     <!-- item template, tr then td, <%# Eval("Variables") %> td for image td then <img src=" /<%# Eval("variable") %>" /> Versions nada-->
     <!-- foottemplate-->
