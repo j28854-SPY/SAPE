@@ -11,5 +11,23 @@ namespace SafetyGearsOnline {
     
     
     public partial class _default1 {
+        
+        /// <summary>
+        /// default_image1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image default_image1;
+        
+        /// <summary>
+        /// itempanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel itempanel;
     }
 }

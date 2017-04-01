@@ -40,7 +40,8 @@ body img						{		}
 /* begin banner  */
 
 #banner							{		}
-#banner img						{	width:100%; 	}
+#banner img						{
+}
 
 /* end banner  */
 
@@ -50,6 +51,36 @@ body img						{		}
 #subbanner h3					{	color:black; font-size:16px; font-weight:bold; text-align:center; line-height:100%; text-shadow:initial;	}
 
 /*  begin content */
+
+
+
+/*  start default */
+
+
+
+
+#default_data_list1             {       }
+.ddlic                          {   width:100%;  }
+.ddlic                          {   width:228px;   }
+
+
+#default_image_content img      {   width:960px;    }
+
+
+
+#banner_cph_itempanel div       {   width:240px; height:250px; float:left; text-align:center;  }
+
+.dddiln                         {   float:left;  }
+
+.dddilc                         {   float:left;   }
+
+.dddib                          {   float:left; width:220px; height:220px;   }
+
+
+
+/*  stop default */
+
+
 
 
 

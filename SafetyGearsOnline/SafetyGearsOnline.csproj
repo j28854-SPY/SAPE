@@ -83,8 +83,12 @@
     <Content Include="Images\BGWrap.png" />
     <Content Include="Images\ccbg.jpg" />
     <Content Include="Images\ccbg1.jpg" />
+    <Content Include="Images\Database\coveralls.jpg" />
+    <Content Include="Images\Database\foot_pretection.jpg" />
     <Content Include="Images\Database\googles_default.jpg" />
+    <Content Include="Images\Database\hand_protection.jpg" />
     <Content Include="Images\Database\head_gear_default.jpg" />
+    <Content Include="Images\Database\respiration_protection.jpg" />
     <Content Include="Images\Footer.png" />
     <Content Include="Images\grey-white.jpg" />
     <Content Include="Images\icon\blog.png" />
@@ -105,6 +109,7 @@
       <LastGenOutput>sape_ef_local.cs</LastGenOutput>
     </Content>
     <Content Include="packages.config" />
+    <Content Include="Pages\Administration\admin.aspx" />
     <Content Include="Pages\Administration\administer.aspx" />
     <Content Include="Pages\Administration\Database\item_upload.aspx" />
     <Content Include="Scripts\contactmap.js" />
@@ -192,6 +197,13 @@
     <Compile Include="Models\item_pushcart_model.cs" />
     <Compile Include="Models\item_table_model.cs" />
     <Compile Include="Models\item_versions_model.cs" />
+    <Compile Include="Pages\Administration\admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Administration\admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Administration\administer.aspx.cs">
       <DependentUpon>administer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
