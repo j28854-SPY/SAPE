@@ -227,6 +227,7 @@
       <DependentUpon>sape_ef_remote.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\item_pushcart_model.cs" />
+    <Compile Include="Models\item_search_retrieve.cs" />
     <Compile Include="Models\item_table_model.cs" />
     <Compile Include="Models\item_versions_model.cs" />
     <Compile Include="Pages\Administration\admin.aspx.cs">

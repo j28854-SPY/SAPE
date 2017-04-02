@@ -11,6 +11,12 @@ namespace SafetyGearsOnline
 {
     public partial class _default1 : System.Web.UI.Page
     {
+
+
+        
+
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
             defaultpagecontent();
@@ -76,7 +82,9 @@ namespace SafetyGearsOnline
         
         }
 
-
-
+        protected void default_searchbox_textbox_TextChanged(object sender, EventArgs e)
+        {
+            default_searchbox_textbox.Text = "";
+        }
     }
 }

@@ -6,6 +6,19 @@
     <div id="default_content">
 
 
+        <div id="default_searchbox1">
+
+
+            <asp:Label ID="default_searchbox_label" runat="server" Text="Welcome to Safety & Protective Equipment E-Commerce" CssClass="default_searchbox_label" Width="960px"></asp:Label>
+            <asp:TextBox ID="default_searchbox_textbox" runat="server" CssClass="default_searchbox_textbox" OnTextChanged="default_searchbox_textbox_TextChanged" ToolTip="Search For Item Equipment">Search for Item Equipment</asp:TextBox>
+
+
+
+        </div>
+            
+
+
+
 
         <div id="default_image_content">
 
