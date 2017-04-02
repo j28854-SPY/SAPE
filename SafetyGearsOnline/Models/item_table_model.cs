@@ -31,7 +31,7 @@ namespace SafetyGearsOnline.Models
             }
 
         }
-        /*end updating item pushcart code similar to merchandise types*/
+        /*end updating item pushcart code similar to item versions*/
 
 
 

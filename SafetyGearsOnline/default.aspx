@@ -10,7 +10,44 @@
 
 
             <asp:Label ID="default_searchbox_label" runat="server" Text="Welcome to Safety & Protective Equipment E-Commerce" CssClass="default_searchbox_label" Width="960px"></asp:Label>
-            <asp:TextBox ID="default_searchbox_textbox" runat="server" CssClass="default_searchbox_textbox" OnTextChanged="default_searchbox_textbox_TextChanged" ToolTip="Search For Item Equipment">Search for Item Equipment</asp:TextBox>
+            <asp:TextBox ID="default_searchbox_textbox" runat="server" CssClass="default_searchbox_textbox" OnTextChanged="default_searchbox_textbox_TextChanged" ToolTip="Search For Item Equipment"></asp:TextBox>
+            <asp:Button ID="default_searchbox_button" runat="server" Text="Search For Item Equipment" OnClick="default_searchbox_button_Click" />
+
+
+            <asp:SqlDataSource ID="default_search_db" runat="server" ConnectionString="<%$ ConnectionStrings:SaPERemoteConnectionString %>" SelectCommand="SELECT * FROM [item_table]"></asp:SqlDataSource>
+
+            <asp:Repeater ID="default_repeater1" runat="server">
+
+
+
+                <HeaderTemplate>
+
+
+                    <table id="default_table1">
+
+                
+
+            
+
+
+                </HeaderTemplate>
+
+                <ItemTemplate>
+
+                    <tr>
+                        <td><%# Eval("ItemName") %>"></td>                        
+                    </tr>
+
+                </ItemTemplate>
+
+                <FooterTemplate>
+
+                    </table>
+                </FooterTemplate>
+
+
+            
+            </asp:Repeater>
 
 
 

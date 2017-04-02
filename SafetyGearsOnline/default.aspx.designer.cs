@@ -31,6 +31,33 @@ namespace SafetyGearsOnline {
         protected global::System.Web.UI.WebControls.TextBox default_searchbox_textbox;
         
         /// <summary>
+        /// default_searchbox_button control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button default_searchbox_button;
+        
+        /// <summary>
+        /// default_search_db control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource default_search_db;
+        
+        /// <summary>
+        /// default_repeater1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater default_repeater1;
+        
+        /// <summary>
         /// default_image1 control.
         /// </summary>
         /// <remarks>

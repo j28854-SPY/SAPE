@@ -84,7 +84,24 @@ namespace SafetyGearsOnline
 
         protected void default_searchbox_textbox_TextChanged(object sender, EventArgs e)
         {
-            default_searchbox_textbox.Text = "";
+            
+        }
+
+        protected void default_searchbox_button_Click(object sender, EventArgs e)
+        {
+
+            string itms = default_searchbox_textbox.Text;
+            using (SaPEEntitiesRemote itmsearch = new SaPEEntitiesRemote())
+            {
+                var query = itmsearch.item_table.Where(i => i.ItemName.Contains(itms));
+
+                default_repeater1.DataSource = query.ToList();
+                default_repeater1.DataBind();
+            }
+
+
+
+
         }
     }
 }
