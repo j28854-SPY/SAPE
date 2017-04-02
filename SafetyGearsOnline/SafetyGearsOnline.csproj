@@ -108,6 +108,16 @@
       <DependentUpon>sape_ef_local.edmx</DependentUpon>
       <LastGenOutput>sape_ef_local.cs</LastGenOutput>
     </Content>
+    <Content Include="Models\EntityFramework\sape_ef_remote.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>sape_ef_remote.edmx</DependentUpon>
+      <LastGenOutput>sape_ef_remote.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\EntityFramework\sape_ef_remote.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>sape_ef_remote.edmx</DependentUpon>
+      <LastGenOutput>sape_ef_remote.cs</LastGenOutput>
+    </Content>
     <Content Include="packages.config" />
     <Content Include="Pages\Administration\admin.aspx" />
     <Content Include="Pages\Administration\administer.aspx" />
@@ -121,6 +131,13 @@
       <DependentUpon>sape_ef_local.edmx</DependentUpon>
     </Content>
     <Content Include="Pages\MasterPage\html_page.Master" />
+    <EntityDeploy Include="Models\EntityFramework\sape_ef_remote.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>sape_ef_remote.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\EntityFramework\sape_ef_remote.edmx.diagram">
+      <DependentUpon>sape_ef_remote.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
@@ -171,13 +188,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\EntityFramework\item_pushcart.cs">
-      <DependentUpon>sape_ef_local.tt</DependentUpon>
+      <DependentUpon>sape_ef_remote.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\EntityFramework\item_table.cs">
-      <DependentUpon>sape_ef_local.tt</DependentUpon>
+      <DependentUpon>sape_ef_remote.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\EntityFramework\item_versions.cs">
-      <DependentUpon>sape_ef_local.tt</DependentUpon>
+      <DependentUpon>sape_ef_remote.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\EntityFramework\sape_ef_local.Context.cs">
       <AutoGen>True</AutoGen>
@@ -193,6 +210,21 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>sape_ef_local.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EntityFramework\sape_ef_remote.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sape_ef_remote.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EntityFramework\sape_ef_remote.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sape_ef_remote.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EntityFramework\sape_ef_remote.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sape_ef_remote.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\item_pushcart_model.cs" />
     <Compile Include="Models\item_table_model.cs" />

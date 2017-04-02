@@ -14,7 +14,7 @@ namespace SafetyGearsOnline.Models
         {
             try
             {
-                using(SaPEEntitiesLocal db = new SaPEEntitiesLocal())
+                using(SaPEEntitiesRemote db = new SaPEEntitiesRemote())
                 {
                     item_table itemtable = db.item_table.Find(Code);
                     return itemtable;
@@ -40,7 +40,7 @@ namespace SafetyGearsOnline.Models
         {
             try
             {
-                using(SaPEEntitiesLocal db = new SaPEEntitiesLocal())
+                using(SaPEEntitiesRemote db = new SaPEEntitiesRemote())
                 {
                     List<item_table> itemtable = (from x in db.item_table select x).ToList();
                     return itemtable;
@@ -64,7 +64,7 @@ namespace SafetyGearsOnline.Models
         {
             try
             {
-                using(SaPEEntitiesLocal db = new SaPEEntitiesLocal())
+                using(SaPEEntitiesRemote db = new SaPEEntitiesRemote())
                 {
                     List<item_table> itemtable = (from x in db.item_table where x.Versions == Versions select x).ToList();
                     return itemtable;
@@ -89,7 +89,7 @@ namespace SafetyGearsOnline.Models
         {
             try
             {
-                SaPEEntitiesLocal db = new SaPEEntitiesLocal();
+                SaPEEntitiesRemote db = new SaPEEntitiesRemote();
                 db.item_table.Add(itemtable);
 
                 db.SaveChanges();
@@ -121,7 +121,7 @@ namespace SafetyGearsOnline.Models
         {
             try
             {
-                SaPEEntitiesLocal db = new SaPEEntitiesLocal();
+                SaPEEntitiesRemote db = new SaPEEntitiesRemote();
                 item_table itemtable = db.item_table.Find(Code);
 
                 db.item_table.Attach(itemtable);
@@ -153,7 +153,7 @@ namespace SafetyGearsOnline.Models
         {
             try
             {
-                SaPEEntitiesLocal db = new SaPEEntitiesLocal();
+                SaPEEntitiesRemote db = new SaPEEntitiesRemote();
                 item_table i = db.item_table.Find(Code);
 
                 i.ItemName = itemtable.ItemName;

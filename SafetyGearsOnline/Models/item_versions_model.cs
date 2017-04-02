@@ -17,7 +17,7 @@ namespace SafetyGearsOnline.Models
 
             try
             {
-                SaPEEntitiesLocal db = new SaPEEntitiesLocal();
+                SaPEEntitiesRemote db = new SaPEEntitiesRemote();
                 db.item_versions.Add(itemversions);
 
                 db.SaveChanges();
