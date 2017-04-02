@@ -9,9 +9,9 @@
         <div id="default_searchbox1">
 
 
-            <asp:Label ID="default_searchbox_label" runat="server" Text="Welcome to Safety & Protective Equipment E-Commerce" CssClass="default_searchbox_label" Width="960px"></asp:Label>
+            <asp:Label ID="default_searchbox_label" runat="server" Text="Welcome to Safety & Protective Equipment E-Commerce" CssClass="default_searchbox_label" Width="100%"></asp:Label>
             <asp:TextBox ID="default_searchbox_textbox" runat="server" CssClass="default_searchbox_textbox" OnTextChanged="default_searchbox_textbox_TextChanged" ToolTip="Search For Item Equipment"></asp:TextBox>
-            <asp:Button ID="default_searchbox_button" runat="server" Text="Search For Item Equipment" OnClick="default_searchbox_button_Click" />
+            <asp:Button ID="default_searchbox_button" runat="server" Text="Search For Item Equipment" OnClick="default_searchbox_button_Click" CssClass="default_searchbox_button" />
 
 
             <asp:SqlDataSource ID="default_search_db" runat="server" ConnectionString="<%$ ConnectionStrings:SaPERemoteConnectionString %>" SelectCommand="SELECT * FROM [item_table]"></asp:SqlDataSource>
@@ -60,11 +60,19 @@
 
         <div id="default_image_content">
 
-            <asp:Image ID="default_image1" runat="server" ImageUrl="~/Images/safetygearbackground.jpg" />
+            <asp:Image ID="default_image1" runat="server" ImageUrl="~/Images/Database/coveralls_banner.jpg" />
 
         </div>
 
+
+
+        <div id="default_available_label">
+            <asp:Label ID="default_available_label_text" runat="server" Text="See Below For Available Equipment" Width="100%" CssClass="default_available_label_text"></asp:Label>
+        </div>
+        
         <hr />
+
+
 
         <div id="default_item_panel1" class="default_item_panel1">
 
@@ -72,7 +80,7 @@
 
 
        
-
+                
 
 
 

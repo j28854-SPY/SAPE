@@ -67,6 +67,15 @@ namespace SafetyGearsOnline {
         protected global::System.Web.UI.WebControls.Image default_image1;
         
         /// <summary>
+        /// default_available_label_text control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label default_available_label_text;
+        
+        /// <summary>
         /// itempanel control.
         /// </summary>
         /// <remarks>

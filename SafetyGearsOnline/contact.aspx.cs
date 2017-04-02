@@ -27,9 +27,10 @@ namespace SafetyGearsOnline
             smtpUser.Credentials = credentials;
 
             MailMessage msg = new MailMessage("testlcbcompsci@gmail.com", contactemailtextboxlink.Text);
+            msg.BodyEncoding = System.Text.Encoding.GetEncoding("utf-8");
             msg.Subject = "Name: " + contactnametextboxlink.Text + " Subject: " + contactsubjecttextboxlink.Text;
             msg.Body = contactmessagetextboxlink.Text;
-
+            
 
 
             try

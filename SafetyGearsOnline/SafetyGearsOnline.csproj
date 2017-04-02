@@ -84,6 +84,8 @@
     <Content Include="Images\ccbg.jpg" />
     <Content Include="Images\ccbg1.jpg" />
     <Content Include="Images\Database\coveralls.jpg" />
+    <Content Include="Images\Database\coveralls_banner.jpg" />
+    <Content Include="Images\Database\coveralls_banner_wh.jpg" />
     <Content Include="Images\Database\foot_pretection.jpg" />
     <Content Include="Images\Database\googles_default.jpg" />
     <Content Include="Images\Database\hand_protection.jpg" />
