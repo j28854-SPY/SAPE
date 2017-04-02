@@ -2,8 +2,7 @@
 html							{	background-image:url('../Images');	}
 body 							{   background-image:url(); background-repeat: no-repeat; background-position: center; background-attachment: fixed; }
 body img						{		}
-#map                            {   width:610px; height:450px; float:right;    }
-#staticmap                      {   width:610px; height:450px; float:right;    }
+
 
 /* begin containers */
 
@@ -125,6 +124,8 @@ body img						{		}
 /*  start contactrightside */
 
 #contactrightside               {   float:right;    }
+#map                            {   width:610px; height:450px; float:right;    }
+#staticmap                      {   width:610px; height:450px; float:right;    }
 
 
 /*  stop contactrightside */
