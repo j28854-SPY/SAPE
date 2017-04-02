@@ -51,7 +51,7 @@ namespace SafetyGearsOnline.Models
 
             try
             {
-                SaPEEntitiesLocal db = new SaPEEntitiesLocal();
+                SaPEEntitiesRemote db = new SaPEEntitiesRemote();
                 item_versions itemversions = db.item_versions.Find(Code);
 
                 db.item_versions.Attach(itemversions);
@@ -85,7 +85,7 @@ namespace SafetyGearsOnline.Models
 
             try
             {
-                SaPEEntitiesLocal db = new SaPEEntitiesLocal();
+                SaPEEntitiesRemote db = new SaPEEntitiesRemote();
                 item_versions i = db.item_versions.Find(Code);
 
                

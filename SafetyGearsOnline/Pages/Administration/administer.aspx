@@ -27,7 +27,7 @@
 
 
 
-        <asp:SqlDataSource ID="Admin_item_table_local" runat="server" ConnectionString="<%$ ConnectionStrings:SaPEConnectionString %>" DeleteCommand="DELETE FROM [item_table] WHERE [Code] = @Code" InsertCommand="INSERT INTO [item_table] ([ItemName], [Versions], [ItemDetails], [ItemCostBND], [ItemDisplay]) VALUES (@ItemName, @Versions, @ItemDetails, @ItemCostBND, @ItemDisplay)" SelectCommand="SELECT * FROM [item_table]" UpdateCommand="UPDATE [item_table] SET [ItemName] = @ItemName, [Versions] = @Versions, [ItemDetails] = @ItemDetails, [ItemCostBND] = @ItemCostBND, [ItemDisplay] = @ItemDisplay WHERE [Code] = @Code">
+        <asp:SqlDataSource ID="Admin_item_table_local" runat="server" ConnectionString="<%$ ConnectionStrings:SaPERemoteConnectionString %>" DeleteCommand="DELETE FROM [item_table] WHERE [Code] = @Code" InsertCommand="INSERT INTO [item_table] ([ItemName], [Versions], [ItemDetails], [ItemCostBND], [ItemDisplay]) VALUES (@ItemName, @Versions, @ItemDetails, @ItemCostBND, @ItemDisplay)" SelectCommand="SELECT * FROM [item_table]" UpdateCommand="UPDATE [item_table] SET [ItemName] = @ItemName, [Versions] = @Versions, [ItemDetails] = @ItemDetails, [ItemCostBND] = @ItemCostBND, [ItemDisplay] = @ItemDisplay WHERE [Code] = @Code">
             <DeleteParameters>
                 <asp:Parameter Name="Code" Type="Int32" />
             </DeleteParameters>
@@ -70,7 +70,7 @@
             </Columns>
         </asp:GridView>
 
-        <asp:SqlDataSource ID="Admin_item_versions" runat="server" ConnectionString="<%$ ConnectionStrings:SaPEConnectionString %>" DeleteCommand="DELETE FROM [item_versions] WHERE [Code] = @Code" InsertCommand="INSERT INTO [item_versions] ([ItemName]) VALUES (@ItemName)" SelectCommand="SELECT * FROM [item_versions]" UpdateCommand="UPDATE [item_versions] SET [ItemName] = @ItemName WHERE [Code] = @Code">
+        <asp:SqlDataSource ID="Admin_item_versions" runat="server" ConnectionString="<%$ ConnectionStrings:SaPERemoteConnectionString %>" DeleteCommand="DELETE FROM [item_versions] WHERE [Code] = @Code" InsertCommand="INSERT INTO [item_versions] ([ItemName]) VALUES (@ItemName)" SelectCommand="SELECT * FROM [item_versions] ORDER BY [ItemName]" UpdateCommand="UPDATE [item_versions] SET [ItemName] = @ItemName WHERE [Code] = @Code">
             <DeleteParameters>
                 <asp:Parameter Name="Code" Type="Int32" />
             </DeleteParameters>

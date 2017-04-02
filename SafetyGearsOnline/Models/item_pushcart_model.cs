@@ -17,7 +17,7 @@ namespace SafetyGearsOnline.Models
 
             try
             {
-                SaPEEntitiesLocal db = new SaPEEntitiesLocal();
+                SaPEEntitiesRemote db = new SaPEEntitiesRemote();
                 db.item_pushcart.Add(itempushcart);
 
                 db.SaveChanges();
@@ -51,7 +51,7 @@ namespace SafetyGearsOnline.Models
 
             try
             {
-                SaPEEntitiesLocal db = new SaPEEntitiesLocal();
+                SaPEEntitiesRemote db = new SaPEEntitiesRemote();
                 item_pushcart itempushcart = db.item_pushcart.Find(Code);
 
                 db.item_pushcart.Attach(itempushcart);
@@ -85,7 +85,7 @@ namespace SafetyGearsOnline.Models
 
             try
             {
-                SaPEEntitiesLocal db = new SaPEEntitiesLocal();
+                SaPEEntitiesRemote db = new SaPEEntitiesRemote();
                 item_pushcart i = db.item_pushcart.Find(Code);
 
                 i.UserCode = itempushcart.UserCode;

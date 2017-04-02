@@ -76,7 +76,7 @@
                 <tr>
                     <td><asp:label runat="server" text="Versions: -" ID="dbitemtableversionslbllink"></asp:label></td>
                     <td><asp:DropDownList ID="dbitemtableversionsdropdownlink" runat="server" DataSourceID="upload_item_page" DataTextField="ItemName" DataValueField="Code"></asp:DropDownList>
-                        <asp:SqlDataSource ID="upload_item_page" runat="server" ConnectionString="<%$ ConnectionStrings:SaPEConnectionString %>" SelectCommand="SELECT * FROM [item_versions] ORDER BY [ItemName]"></asp:SqlDataSource>
+                        <asp:SqlDataSource ID="upload_item_page" runat="server" ConnectionString="<%$ ConnectionStrings:SaPERemoteConnectionString %>" SelectCommand="SELECT * FROM [item_versions]"></asp:SqlDataSource>
                     </td>
                 </tr>
             </table>

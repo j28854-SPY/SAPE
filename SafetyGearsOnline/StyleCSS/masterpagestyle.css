@@ -64,7 +64,7 @@ body img						{		}
 .ddlic                          {   width:228px;   }
 
 
-#default_image_content img      {   width:960px;    }
+#default_image_content img      {   width:960px; height:200px;    }
 
 
 
