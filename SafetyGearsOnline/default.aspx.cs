@@ -93,7 +93,12 @@ namespace SafetyGearsOnline
             string itms = default_searchbox_textbox.Text;
             using (SaPEEntitiesRemote itmsearch = new SaPEEntitiesRemote())
             {
-                var query = itmsearch.item_table.Where(i => i.ItemName.Contains(itms));
+
+
+
+                var query = (from x in itmsearch.item_table where x.ItemName.Contains("x") select x);
+                /*var query = (from x in itmsearch.item_table where x.ItemName.IndexOf("x", StringComparison.InvariantCultureIgnoreCase) >= 0 select x);*/
+                /*var query = (from x in itmsearch.item_table where x.ItemName == itms select x);*/
 
                 default_repeater1.DataSource = query.ToList();
                 default_repeater1.DataBind();

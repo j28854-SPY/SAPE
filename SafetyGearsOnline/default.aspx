@@ -35,7 +35,8 @@
                 <ItemTemplate>
 
                     <tr>
-                        <td><%# Eval("ItemName") %>"></td>                        
+                        <td><%# Eval("ItemName") %></td>
+                        <!-- <td><img src="/Images/Database/ <%# Eval("ItemName") %>" width="70" height:"70" /></td>-->                        
                     </tr>
 
                 </ItemTemplate>
@@ -65,7 +66,7 @@
 
         <hr />
 
-        <div id="default_item_panel1">
+        <div id="default_item_panel1" class="default_item_panel1">
 
             <asp:Panel ID="itempanel" runat="server">
 
