@@ -38,7 +38,10 @@
 
             <div id="top">
 
-
+                <ul>
+                    <li><a href="/.aspx">Login</a></li>
+                    <li><a href="/.aspx">Register</a></li>                    
+                </ul>
 
             </div>
 
